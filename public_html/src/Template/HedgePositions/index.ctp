@@ -73,9 +73,9 @@
             <!-- Open Positions: Current Price || Closed Positions: Closed Price. -->
             <td>$<?= $this->Number->format($currentPrice); ?></td>
             <!-- Unrealized PL -->
-            <td><?= number_format($hedgePosition->getUnrealizedPL(), 8); ?> BTC</td>
+            <td><?= number_format($hedgePosition->getUnrealizedPL(), 6); ?> BTC</td>
             <!-- Realized PL -->
-            <td><?= number_format($hedgePosition->getRealizedPL(), 8);  ?> BTC</td>
+            <td><?= number_format($hedgePosition->getRealizedPL(), 6);  ?> BTC</td>
             <!-- Recalculation Countdown -->
             <td><?= date("Y-m-d H:i:s", $endingTime) ?></td>
             <!-- Actions -->
