@@ -41,24 +41,11 @@
         $totalUnrealizedPL = 0;
     ?>
     <?php foreach ($hedgePositions as $hedgePosition):
-        $currentPrice = $hedgePosition->getCurrentPrice($hedgePosition->exchange->name);
-        if($hedgePosition->bias == "LONG") {
-            $unrealizedPL = (($currentPrice - $hedgePosition->openprice) * $hedgePosition->amount) / $currentPrice;
-            $realizedPL = ($hedgePosition->balance - $hedgePosition->amount);
-        } else if($hedgePosition->bias == "SHORT") {
-            $unrealizedPL = (($hedgePosition->openprice - $currentPrice) * $hedgePosition->amount) / $currentPrice;
-            $realizedPL = ($hedgePosition->balance - $hedgePosition->amount);
-        }
+        $currentPrice = $hedgePosition->getCurrentPrice();
+                
         
-        if($hedgePosition->status == 0) {
-            $realizedPL = $unrealizedPL;
-            $unrealizedPL = 0;
-            $currentPrice = $hedgePosition->closeprice;
-            
-            $totalRealizedPL += $realizedPL;
-        } else {
-            $totalUnrealizedPL += $unrealizedPL;
-        }
+        $totalRealizedPL += $hedgePosition->getRealizedPL();
+        $totalUnrealizedPL += $hedgePosition->getUnrealizedPL();
         
         $endingTime = strtotime("+7 days", strtotime($hedgePosition->timeopened));
         
@@ -85,12 +72,13 @@
             <td>$<?= $this->Number->format($hedgePosition->openprice) ?> </td>
             <!-- Open Positions: Current Price || Closed Positions: Closed Price. -->
             <td>$<?= $this->Number->format($currentPrice); ?></td>
-            <!-- -->
-            <td><?= number_format($unrealizedPL, 5); ?> BTC</td>
-            <!-- -->
-            <td><?= number_format($realizedPL, 5);  ?> BTC</td>
-            <!-- -->
+            <!-- Unrealized PL -->
+            <td><?= number_format($hedgePosition->getUnrealizedPL(), 8); ?> BTC</td>
+            <!-- Realized PL -->
+            <td><?= number_format($hedgePosition->getRealizedPL(), 8);  ?> BTC</td>
+            <!-- Recalculation Countdown -->
             <td><?= date("Y-m-d H:i:s", $endingTime) ?></td>
+            <!-- Actions -->
             <td class="actions">
                 <?php 
                     if($hedgePosition->status != 0) { 

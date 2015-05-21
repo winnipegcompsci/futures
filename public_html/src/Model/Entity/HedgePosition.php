@@ -3,6 +3,7 @@ namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
 use Cake\Network\Http\Client;
+use Cake\ORM\TableRegistry;
 
 /**
  * HedgePosition Entity.
@@ -29,8 +30,21 @@ class HedgePosition extends Entity
         'status' => true,
         'exchange' => true,
     ];
+        
+    public function getCurrentPrice($exchange = null) {
     
-    public function getCurrentPrice($exchange) {        
+        if($exchange == null) {
+            $exchanges = TableRegistry::get('exchanges')->findById($this->exchange_id);
+            
+            foreach($exchanges as $xchg) {
+                $exchange = $xchg->name;
+            }               
+        }
+    
+        if($this->status == 0) {
+            return $this->closeprice;
+        }
+    
         $http = new Client();
         
         if($exchange == "OKCOIN") {
@@ -47,6 +61,50 @@ class HedgePosition extends Entity
         }
     } // end getCurrentPrice()
     
+    
+    public function getUnrealizedPL() {
+
+        if($this->bias == "LONG") {
+            // If Position if Closed.
+            if ($this->status == "1") {             // Calculate  from Starting Price to Current Price.
+                $unrealizedPL = (($this->getCurrentPrice() - $this->openprice) * $this->amount) / $this->getCurrentPrice();
+            } else {
+                return 0;
+            }
+            
+        }     
+        else if ($this->bias == "SHORT") {
+            if ($this->status == "1") {      // Calculate from Starting to Closed Price.
+                $unrealizedPL = (($this->openprice - $this->getCurrentPrice()) * $this->amount) / $this->getCurrentPrice();
+            } else {
+                return 0;
+            }
+        }
+        
+        return  $unrealizedPL;
+    }
+    
+    public function getRealizedPL() {
+        if($this->bias == "LONG") {
+            // If Position if Closed.
+            if($this->status == "0") {              // Calculate from Starting to Closed Price.
+                $realizedPL = (($this->getCurrentPrice() - $this->openprice) * $this->amount) / $this->getCurrentPrice();
+            } else if ($this->status == "1") {      // Calculate  from Starting Price to Current Price.
+                $realizedPL = 0;
+            }
+            
+        }
+        else if ($this->bias == "SHORT") {
+            if($this->status == "0") {              // Calculate from Starting to Closed Price
+                $realizedPL = (($this->openprice - $this->closeprice) * $this->amount) / $this->closeprice;
+            } else if ($this->status == "1") {      // Calculate from Starting to Closed Price.
+                $realizedPL = 0;
+            }
+        }
+        
+        return $realizedPL;
+    }
+    
     public function update() 
     {
         $this->HedgePositions = TableRegistry::get('HedgePositions');
@@ -55,7 +113,7 @@ class HedgePosition extends Entity
         $hedgePosition = $this;
         
         $openingPrice = $hedgePosition->lastprice;
-        $currentPrice = $hedgePosition->getCurrentPrice($hedgePosition->exchange->name);
+        $currentPrice = $hedgePosition->getCurrentPrice();
                
         $minBound = $hedgePosition->lastprice - ($hedgePosition->lastprice * $hedgePosition->ssp);
         $maxBound = $hedgePosition->lastprice + ($hedgePosition->lastprice * $hedgePosition->ssp);
@@ -72,6 +130,7 @@ class HedgePosition extends Entity
                 // Update Old Hedge Position
                 $hedgePosition->balance += $unrealizedPL;            
                 $hedgePosition->timeopened = date("Y-m-d H:i:s");
+                $hedgePosition->closeprice = $currentPrice;
                 $hedgePosition->status = 0;
                 $this->HedgePositions->save($hedgePosition);
                 
@@ -83,7 +142,7 @@ class HedgePosition extends Entity
                 $newPosition->ssp = $hedgePosition->ssp;
                 $newPosition->leverage = $hedgePosition->leverage;
                 $newPosition->balance = $hedgePosition->amount;
-                $newPosition->lastprice = $currentPrice;
+                $newPosition->openprice = $currentPrice;
                 $newPosition->timeopened = date("Y-m-d H:i:s");
                 $newPosition->recalculation = $hedgePosition->recalculation;                
                 
@@ -109,6 +168,7 @@ class HedgePosition extends Entity
                 $hedgePosition->balance += $unrealizedPL;
                 $hedgePosition->timeopened = date("Y-m-d H:i:s");
                 $hedgePosition->status = 0;
+                $hedgePosition->closeprice = $currentPrice;
                 $this->HedgePositions->save($hedgePosition);
                 
                 $newPosition = $this->HedgePositions->newEntity();
@@ -119,7 +179,7 @@ class HedgePosition extends Entity
                 $newPosition->ssp = $hedgePosition->ssp;
                 $newPosition->leverage = $hedgePosition->leverage;
                 $newPosition->balance = $hedgePosition->amount;
-                $newPosition->lastprice = $currentPrice;
+                $newPosition->openprice = $currentPrice;
                 $newPosition->timeopened = date("Y-m-d H:i:s");
                 $newPosition->recalculation = $hedgePosition->recalculation;   
                 
@@ -133,7 +193,6 @@ class HedgePosition extends Entity
                 // else hold onto position.
                 error_log("Hoding on to Position");
             }
-            
         }
     } // end update
 }

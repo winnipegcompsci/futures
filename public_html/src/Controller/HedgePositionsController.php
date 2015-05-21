@@ -134,95 +134,9 @@ class HedgePositionsController extends AppController
             'contain' => ['Exchanges']
         ]);
         
-        $openingPrice = $hedgePosition->lastprice;
-        $currentPrice = $hedgePosition->getCurrentPrice($hedgePosition->exchange->name);
-               
-        $minBound = $hedgePosition->lastprice - ($hedgePosition->lastprice * $hedgePosition->ssp);
-        $maxBound = $hedgePosition->lastprice + ($hedgePosition->lastprice * $hedgePosition->ssp);
-        
-        error_log("Updating...");
-        error_log("Last Price: " . $openingPrice);
-        error_log("Min Bound: " . $minBound);
-        error_log("Current Price: " . $currentPrice);
-        error_log("Max Bound: " . $maxBound);
+        $hedgePosition->update();   // Call Update Function.
         
         
-        // Recalculate Stops.
-        if($hedgePosition->bias == "LONG") {
-            if($currentPrice < $minBound) {            
-                // Close Position and Reopen at Current Price.
-                $output = "<br /><strong>Closing Long Position at " . $hedgePosition->lastprice . " and re-opening at " . $currentPrice . "</strong>";
-            
-                $unrealizedPL = (($currentPrice - $hedgePosition->lastprice) * $hedgePosition->amount) / $currentPrice;
-                
-               
-                // Update Old Hedge Position
-                $hedgePosition->balance += $unrealizedPL;            
-                $hedgePosition->timeopened = date("Y-m-d H:i:s");
-                $hedgePosition->status = 0;
-                $this->HedgePositions->save($hedgePosition);
-                
-                $newPosition = $this->HedgePositions->newEntity();
-                
-                $newPosition->exchange_id = $hedgePosition->exchange_id;
-                $newPosition->bias = $hedgePosition->bias;
-                $newPosition->amount = $hedgePosition->amount;
-                $newPosition->ssp = $hedgePosition->ssp;
-                $newPosition->leverage = $hedgePosition->leverage;
-                $newPosition->balance = $hedgePosition->amount;
-                $newPosition->lastprice = $currentPrice;
-                $newPosition->timeopened = date("Y-m-d H:i:s");
-                $newPosition->recalculation = $hedgePosition->recalculation;                
-                
-                if ($this->HedgePositions->save($newPosition)) {
-                    $this->Flash->success("Old Position Closed, New Position Created");
-                } else {
-                    $this->Flash->error("Error: The hedge could not be Saved!");
-                }
- 
-            } else {
-                // else hold onto position
-                $this->Flash->success("Holding on to Position");
-            }
-            
-        }
-        
-        if ($hedgePosition->bias == "SHORT") {
-            if($currentPrice > $maxBound) {
-                // Close Position and Reopen at Current Price.
-                    
-                $unrealizedPL = (($hedgePosition->lastprice - $currentPrice) * $hedgePosition->amount) / $currentPrice;
-                
-                $hedgePosition->balance += $unrealizedPL;
-                $hedgePosition->timeopened = date("Y-m-d H:i:s");
-                $hedgePosition->status = 0;
-                $this->HedgePositions->save($hedgePosition);
-                
-                $newPosition = $this->HedgePositions->newEntity();
-                
-                $newPosition->exchange_id = $hedgePosition->exchange_id;
-                $newPosition->bias = $hedgePosition->bias;
-                $newPosition->amount = $hedgePosition->amount;
-                $newPosition->ssp = $hedgePosition->ssp;
-                $newPosition->leverage = $hedgePosition->leverage;
-                $newPosition->balance = $hedgePosition->amount;
-                $newPosition->lastprice = $currentPrice;
-                $newPosition->timeopened = date("Y-m-d H:i:s");
-                $newPosition->recalculation = $hedgePosition->recalculation;   
-                
-                
-                if ($this->HedgePositions->save($newPosition)) {
-                    $this->Flash->success("Old Position Closed, New Position Created");
-                } else {
-                    $this->Flash->error("Error: The hedge could not be Saved!");
-                }
-            } else {
-                // else hold onto position.
-                $this->Flash->success("Holding on to Position");
-            }
-            
-        }
-        
-        return $this->redirect(['controller' => 'HedgePositions', 'action' => 'index']);
+        return $this->redirect(['action' => 'index']);
     }
 }
