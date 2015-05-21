@@ -47,8 +47,10 @@
         $totalRealizedPL += $hedgePosition->getRealizedPL();
         $totalUnrealizedPL += $hedgePosition->getUnrealizedPL();
         
-        $endingTime = strtotime("+7 days", strtotime($hedgePosition->timeopened));
-        
+        $endingTime = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($hedgePosition->timeopened)));
+        if($hedgePosition->status == 0) {
+            $endingTime = "-- N/A --";
+        }
         
         ?>
         <tr class="<?php echo $hedgePosition->status == 1 ? 'text-success' : 'text-danger' ?>">
@@ -77,7 +79,7 @@
             <!-- Realized PL -->
             <td><?= number_format($hedgePosition->getRealizedPL(), 6);  ?> BTC</td>
             <!-- Recalculation Countdown -->
-            <td><?= date("Y-m-d H:i:s", $endingTime) ?></td>
+            <td><?= $endingTime ?></td>
             <!-- Actions -->
             <td class="actions">
                 <?php 
