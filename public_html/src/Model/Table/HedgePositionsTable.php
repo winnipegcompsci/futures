@@ -60,8 +60,12 @@ class HedgePositionsTable extends Table
             ->allowEmpty('balance');
             
         $validator
-            ->add('lastprice', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('lastprice');
+            ->add('openprice', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('openprice');
+            
+        $validator
+            ->add('closeprice', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('closeprice');
             
         $validator
             ->add('timeopened', 'valid', ['rule' => 'datetime'])

@@ -17,9 +17,11 @@
             echo $this->Form->input('ssp');
             echo $this->Form->input('leverage');
             echo $this->Form->input('balance');
-            echo $this->Form->input('lastprice');
+            echo $this->Form->input('openprice');
+            echo $this->Form->input('closeprice');
             echo $this->Form->input('timeopened');
             echo $this->Form->input('recalculation');
+            echo $this->Form->input('status');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

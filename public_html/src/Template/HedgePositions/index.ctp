@@ -43,16 +43,17 @@
     <?php foreach ($hedgePositions as $hedgePosition):
         $currentPrice = $hedgePosition->getCurrentPrice($hedgePosition->exchange->name);
         if($hedgePosition->bias == "LONG") {
-            $unrealizedPL = (($currentPrice - $hedgePosition->lastprice) * $hedgePosition->amount) / $currentPrice;
+            $unrealizedPL = (($currentPrice - $hedgePosition->openprice) * $hedgePosition->amount) / $currentPrice;
             $realizedPL = ($hedgePosition->balance - $hedgePosition->amount);
         } else if($hedgePosition->bias == "SHORT") {
-            $unrealizedPL = (($hedgePosition->lastprice - $currentPrice) * $hedgePosition->amount) / $currentPrice;
+            $unrealizedPL = (($hedgePosition->openprice - $currentPrice) * $hedgePosition->amount) / $currentPrice;
             $realizedPL = ($hedgePosition->balance - $hedgePosition->amount);
         }
         
         if($hedgePosition->status == 0) {
             $realizedPL = $unrealizedPL;
             $unrealizedPL = 0;
+            $currentPrice = $hedgePosition->closeprice;
             
             $totalRealizedPL += $realizedPL;
         } else {
@@ -64,19 +65,31 @@
         
         ?>
         <tr class="<?php echo $hedgePosition->status == 1 ? 'text-success' : 'text-danger' ?>">
+            <!-- ID -->
             <td><?= $this->Number->format($hedgePosition->id) ?></td>
+            <!-- Status -->
             <td><?= $hedgePosition->status == '1' ? 'OPEN' : 'CLOSED' ?></td>
+            <!-- Exchange Name -->
             <td>
                 <?= $hedgePosition->has('exchange') ? $this->Html->link($hedgePosition->exchange->name, ['controller' => 'Exchanges', 'action' => 'view', $hedgePosition->exchange->id]) : '' ?>
             </td>
+            <!-- Position Bias -->
             <td><?= h($hedgePosition->bias) ?></td>
+            <!-- Amount Hedged -->
             <td><?= $this->Number->format($hedgePosition->amount) ?> BTC</td>
+            <!-- Slippage Stop Point -->
             <td><?= $this->Number->format($hedgePosition->ssp*100) ?>%</td>
+            <!-- Leverage -->
             <td><?= h($hedgePosition->leverage) ?>X</td>
-            <td>$<?= $this->Number->format($hedgePosition->lastprice) ?> </td>
+            <!-- Price Opened at. -->
+            <td>$<?= $this->Number->format($hedgePosition->openprice) ?> </td>
+            <!-- Open Positions: Current Price || Closed Positions: Closed Price. -->
             <td>$<?= $this->Number->format($currentPrice); ?></td>
+            <!-- -->
             <td><?= number_format($unrealizedPL, 5); ?> BTC</td>
+            <!-- -->
             <td><?= number_format($realizedPL, 5);  ?> BTC</td>
+            <!-- -->
             <td><?= date("Y-m-d H:i:s", $endingTime) ?></td>
             <td class="actions">
                 <?php 

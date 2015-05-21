@@ -29,10 +29,14 @@
             <p><?= $this->Number->format($hedgePosition->ssp) ?></p>
             <h6 class="subheader"><?= __('Balance') ?></h6>
             <p><?= $this->Number->format($hedgePosition->balance) ?></p>
-            <h6 class="subheader"><?= __('Lastprice') ?></h6>
-            <p><?= $this->Number->format($hedgePosition->lastprice) ?></p>
+            <h6 class="subheader"><?= __('Openprice') ?></h6>
+            <p><?= $this->Number->format($hedgePosition->openprice) ?></p>
+            <h6 class="subheader"><?= __('Closeprice') ?></h6>
+            <p><?= $this->Number->format($hedgePosition->closeprice) ?></p>
             <h6 class="subheader"><?= __('Recalculation') ?></h6>
             <p><?= $this->Number->format($hedgePosition->recalculation) ?></p>
+            <h6 class="subheader"><?= __('Status') ?></h6>
+            <p><?= $this->Number->format($hedgePosition->status) ?></p>
         </div>
         <div class="large-2 columns dates end">
             <h6 class="subheader"><?= __('Timeopened') ?></h6>
