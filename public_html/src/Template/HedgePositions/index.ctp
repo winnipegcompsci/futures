@@ -31,7 +31,7 @@
             <th>Current Price</th>
             <th>Unrealized PL</th>
             <th>Realized PL</th>
-            <th>Recalculation In</th>
+            <th>Recalculation</th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>
