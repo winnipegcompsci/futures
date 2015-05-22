@@ -158,7 +158,6 @@ class HedgePosition extends Entity
                 return false;
             }
             
-            // Testing Hook Post-Receive.
         }
         
         if ($hedgePosition->bias == "SHORT") {
