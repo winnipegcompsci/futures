@@ -31,6 +31,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('datepicker3'); ?>
     <?= $this->Html->css('styles.css'); ?>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+    <script src="//cdn.datatables.net/plug-ins/1.10.7/api/fnReloadAjax.js"></script> 
     
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
