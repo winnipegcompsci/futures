@@ -10,39 +10,38 @@ use App\Controller\AppController;
  */
 class HedgePositionsController extends AppController
 {
-
     /**
      * Index method
      *
      * @return void
      */
     public function index()
-    {
+    {        
         if(isset($_GET['status']) && $_GET['status'] == 'all') {
-            error_log('Displaying All Positions');
             $this->paginate = [
-                'contain' => ['Exchanges']
+                'contain' => ['Exchanges'],
+                'limit' => 50,
+                'order' => ['id' => 'desc']
             ];
             $this->set('hedgePositions', $this->paginate($this->HedgePositions));
             $this->set('_serialize', ['hedgePositions']);
             
         } else {
-            error_log('Displaying Open Positions');
             $this->paginate = [
-                'contain' => ['Exchanges']
+                'contain' => ['Exchanges'],
             ];
-            $this->set('hedgePositions', $this->paginate($this->HedgePositions->find('all', [
-                'conditions' => ['status' => 1]
-            ])));
+            $this->set('hedgePositions', 
+                $this->paginate(
+                    $this->HedgePositions->find('all', [
+                        'conditions' => ['status' => 1],
+                    ])
+                )
+            );
             $this->set('_serialize', ['hedgePositions']);
 
         }
-    
-        // $this->paginate = [
-            // 'contain' => ['Exchanges']
-        // ];
-        // $this->set('hedgePositions', $this->paginate($this->HedgePositions));
-        // $this->set('_serialize', ['hedgePositions']);
+
+        // debug($this->paginate(), TRUE); 
     }
 
     /**

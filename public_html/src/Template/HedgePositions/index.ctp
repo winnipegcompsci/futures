@@ -17,7 +17,7 @@
 </div>
 
 <div class="hedgePositions index col-lg-10 col-md-9 columns">        
-    <table id="hedge_position_table" cellpadding="0" cellspacing="0">
+    <table id="datatable" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
             <th>ID</th>
@@ -39,10 +39,10 @@
     <?php 
         $totalRealizedPL = 0;
         $totalUnrealizedPL = 0;
+        $data = array();
     ?>
     <?php foreach ($hedgePositions as $hedgePosition):
-        $currentPrice = $hedgePosition->getCurrentPrice();
-                
+        $currentPrice = $hedgePosition->getCurrentPrice();  
         
         $totalRealizedPL += $hedgePosition->getRealizedPL();
         $totalUnrealizedPL += $hedgePosition->getUnrealizedPL();
@@ -53,9 +53,6 @@
         }
         
         $positionProfit = $hedgePosition->getRealizedPL() + $hedgePosition->getUnrealizedPL();
-
-        // $rowBG = "#f2dede";    
-        
 
         if($positionProfit >= 0) {
             $rowBG = "#d0e9c6";                 // Success
@@ -78,9 +75,7 @@
             // $border = "#f9243f";
             
         }
-        
-
-        
+             
         
         ?>
         <tr class="<?= $rowClass ?>" style="background-color: <?= $rowBG ?>" >
@@ -101,9 +96,9 @@
             <!-- Leverage -->
             <td><?= h($hedgePosition->leverage) ?>X</td>
             <!-- Price Opened at. -->
-            <td>$<?= $this->Number->format($hedgePosition->openprice) ?> </td>
+            <td>$<?= number_format($hedgePosition->openprice, 2) ?> </td>
             <!-- Open Positions: Current Price || Closed Positions: Closed Price. -->
-            <td>$<?= $this->Number->format($currentPrice); ?></td>
+            <td>$<?= number_format($currentPrice, 2); ?></td>
             <!-- Unrealized PL -->
             <td><?= number_format($hedgePosition->getUnrealizedPL(), 6); ?> BTC</td>
             <!-- Realized PL -->
@@ -114,31 +109,76 @@
             <td class="actions">
                 <?php 
                     if($hedgePosition->status != 0) { 
-                        echo $this->Html->link(__('Close/Open'), ['action' => 'update', $hedgePosition->id]);
+                        echo $this->Html->link(__('Close/Reopen'), ['action' => 'update', $hedgePosition->id]);
                     } 
-                ?>
-                <?php /* 
+                /* 
                 <?= $this->Html->link(__('View'), ['action' => 'view', $hedgePosition->id]) ?>
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $hedgePosition->id]) ?>
                 <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $hedgePosition->id], ['confirm' => __('Are you sure you want to delete # {0}?', $hedgePosition->id)]) ?>
-                */ ?>
+                */ 
+                ?>
             </td>
         </tr>
 
-    <?php endforeach; ?>
+    <?php
+            if($hedgePosition->status == 0) {
+                $data['upl'][] = number_format($hedgePosition->openprice, 2);
+                $data['rpl'][] = number_format($hedgePosition->closeprice, 2);
+                $data['title'][] = $hedgePosition->exchange->name . " #:" . $hedgePosition->id;
+            }
+        endforeach;
+        
+        $data['upl'] = array_reverse($data['upl']);
+        $data['rpl'] = array_reverse($data['rpl']);
+        $data['title'] = array_reverse($data['title']);
+    ?>
     </tbody>
     </table>
+    
+   
+    <div class="panel panel-default">
+        <div class="panel-heading">Open Price vs Closed Price (Closed Positions)</div>
+        <div class="panel-body">
+            <div class="canvas-wrapper">
+                <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function(event) { 
-    var table = $('#hedge_position_table').DataTable( {
-    } );
-    
-    setInterval( function () {
-        table.fnReloadAjax();
-        // table.ajax.reload( null, false ); // user paging is not reset on reload
-    }, 15000 );
-});
+var hedgePLData = {
+    labels : <?= json_encode($data['title']) ?>,
+   
+    datasets : [
+        {
+            label: "Unrealized Profit/Loss",
+            fillColor : "rgba(220,220,220,0.2)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(220,220,220,1)",
+            data : <?= json_encode($data['upl']); ?>
+            
+        },
+        {
+            label: "Realized Profit/Loss",
+            fillColor : "rgba(48, 164, 255, 0.2)",
+			strokeColor : "rgba(48, 164, 255, 0.8)",
+			highlightFill : "rgba(48, 164, 255, 0.75)",
+			highlightStroke : "rgba(48, 164, 255, 1)",
+            data : <?= json_encode($data['rpl']); ?>
+            
+        }
+    ]
+}
 
+window.onload = function() {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLineChart = new Chart(chart1).Line(hedgePLData, {
+		responsive: true
+	});
+    
+}
 </script>

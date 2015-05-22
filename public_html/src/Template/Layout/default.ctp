@@ -119,7 +119,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('chart.min'); ?>
     <?= $this->Html->script('easypiechart'); ?>
     <?= $this->Html->script('bootstrap-datepicker'); ?>
-    <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.7/api/fnReloadAjax.js"></script> 
+    <!-- <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.7/api/fnReloadAjax.js"></script> -->
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
 </body>
 </html>
