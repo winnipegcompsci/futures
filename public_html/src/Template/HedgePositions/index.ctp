@@ -17,7 +17,7 @@
 </div>
 
 <div class="hedgePositions index col-lg-10 col-md-9 columns">        
-    <table id="datatable" cellpadding="0" cellspacing="0">
+    <table id="hedge_position_table" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
             <th>ID</th>
@@ -52,12 +52,42 @@
             $endingTime = "-- N/A --";
         }
         
+        $positionProfit = $hedgePosition->getRealizedPL() + $hedgePosition->getUnrealizedPL();
+
+        // $rowBG = "#f2dede";    
+        
+
+        if($positionProfit >= 0) {
+            $rowBG = "#d0e9c6";                 // Success
+
+        } else {
+            $rowBG = "#fcf8e3";                // Warning
+            
+            if($positionProfit < 0 && $hedgePosition->status == 1) {
+                $rowBG = "#f2dede";           // 
+            }
+        }
+
+        $border = "";
+        if($hedgePosition->status == 1) {
+            $rowClass = " text-success ";
+            // $border = "#8ad919";
+        } else {
+            $rowClass = " text-danger ";
+            $rowBG = "#fcf8e3";
+            // $border = "#f9243f";
+            
+        }
+        
+
+        
+        
         ?>
-        <tr class="<?php echo $hedgePosition->status == 1 ? 'text-success' : 'text-danger' ?>">
+        <tr class="<?= $rowClass ?>" style="background-color: <?= $rowBG ?>" >
             <!-- ID -->
             <td><?= $this->Number->format($hedgePosition->id) ?></td>
             <!-- Status -->
-            <td><?= $hedgePosition->status == '1' ? 'OPEN' : 'CLOSED' ?></td>
+            <td><?= $hedgePosition->status == '1' ? '<strong class="text-success">OPEN</strong>' : '<strong class="text-danger">CLOSED</strong>' ?></td>
             <!-- Exchange Name -->
             <td>
                 <?= $hedgePosition->has('exchange') ? $this->Html->link($hedgePosition->exchange->name, ['controller' => 'Exchanges', 'action' => 'view', $hedgePosition->exchange->id]) : '' ?>
@@ -84,7 +114,7 @@
             <td class="actions">
                 <?php 
                     if($hedgePosition->status != 0) { 
-                        echo $this->Html->link(__('Update'), ['action' => 'update', $hedgePosition->id]);
+                        echo $this->Html->link(__('Close/Open'), ['action' => 'update', $hedgePosition->id]);
                     } 
                 ?>
                 <?php /* 
@@ -115,5 +145,17 @@
             <td>Total Profit</td> <td class="pull-right"><?= number_format($totalUnrealizedPL + $totalRealizedPL, 8); ?> BTC </td>
         </tr>        
     </table>
-
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+    var table = $('#hedge_position_table').DataTable( {
+    } );
+    
+    setInterval( function () {
+        table.fnReloadAjax(null, false);
+        // table.ajax.reload( null, false ); // user paging is not reset on reload
+    }, 15000 );
+});
+
+</script>
