@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     } );
     
     setInterval( function () {
-        table.fnReloadAjax(null, false);
+        table.fnReloadAjax();
         // table.ajax.reload( null, false ); // user paging is not reset on reload
     }, 15000 );
 });
