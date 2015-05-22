@@ -130,23 +130,6 @@
     </table>
 </div>
 
-<div class="results columns col-lg-10 col-md-9">
-    <table width="40%" class="pull-right">
-        <tr>
-            <th class="text-center" colspan=2> Results </th>
-        </tr>
-        <tr class="<?php echo $totalUnrealizedPL >= 0 ? 'text-success' : 'text-danger' ?>">
-            <td>Total Unrealized Profit:</td> <td class="pull-right"><?= number_format($totalUnrealizedPL, 8) ?> BTC </td>
-        </tr>
-        <tr class="<?php echo $totalRealizedPL >= 0 ? 'text-success' : 'text-danger' ?>">
-            <td>Total Realized Profit:</td> <td class="pull-right"><?= number_format($totalRealizedPL, 8) ?> BTC </td>
-        </tr>
-        <tr class="<?php echo $totalUnrealizedPL + $totalRealizedPL >= 0 ? 'text-success' : 'text-danger' ?>">
-            <td>Total Profit</td> <td class="pull-right"><?= number_format($totalUnrealizedPL + $totalRealizedPL, 8); ?> BTC </td>
-        </tr>        
-    </table>
-</div>
-
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 
     var table = $('#hedge_position_table').DataTable( {
