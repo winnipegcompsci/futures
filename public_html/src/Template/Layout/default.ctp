@@ -31,7 +31,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('datepicker3'); ?>
     <?= $this->Html->css('styles.css'); ?>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
-    <script src="//cdn.datatables.net/plug-ins/1.10.7/api/fnReloadAjax.js"></script> 
     
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -120,6 +119,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('chart.min'); ?>
     <?= $this->Html->script('easypiechart'); ?>
     <?= $this->Html->script('bootstrap-datepicker'); ?>
+    <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.7/api/fnReloadAjax.js"></script> 
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
 </body>
 </html>
@@ -133,3 +133,4 @@ $(document).ready(function() {
     $("#datepicker").datepicker();
 }); 	 	
 </script>
+
