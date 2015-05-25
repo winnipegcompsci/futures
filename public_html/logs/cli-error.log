@@ -1,0 +1,123 @@
+2015-05-21 20:15:08 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Hello" could not be found.
+Exception Attributes: array (
+  'class' => 'Hello',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('hello')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:17:12 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Upgradehedges" could not be found.
+Exception Attributes: array (
+  'class' => 'Upgradehedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('upgradehedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:17:35 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Upgradehedges" could not be found.
+Exception Attributes: array (
+  'class' => 'Upgradehedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('upgradehedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:17:52 Error: [Cake\Console\Exception\MissingShellException] Shell class for "UpgradeHedges" could not be found.
+Exception Attributes: array (
+  'class' => 'UpgradeHedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('UpgradeHedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:18:24 Error: [Cake\Console\Exception\MissingShellException] Shell class for "UpgradeHedges" could not be found.
+Exception Attributes: array (
+  'class' => 'UpgradeHedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('UpgradeHedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:18:30 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Upgradehedges" could not be found.
+Exception Attributes: array (
+  'class' => 'Upgradehedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('upgradehedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:18:35 Error: [Cake\Console\Exception\MissingShellException] Shell class for "UpgradeHedges" could not be found.
+Exception Attributes: array (
+  'class' => 'UpgradeHedges',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('upgrade_hedges')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-21 20:26:36 Warning: Warning (2): Division by zero in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\HedgePosition.php, line 65]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\HedgePosition::update() - APP/Model\Entity\HedgePosition.php, line 65
+App\Shell\HedgesShell::main() - APP/Shell\HedgesShell.php, line 25
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-21 20:27:38 Warning: Warning (2): Division by zero in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\HedgePosition.php, line 65]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\HedgePosition::update() - APP/Model\Entity\HedgePosition.php, line 65
+App\Shell\HedgesShell::main() - APP/Shell\HedgesShell.php, line 25
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-21 20:36:55 Warning: Warning (2): Division by zero in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\HedgePosition.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\HedgePosition::update() - APP/Model\Entity\HedgePosition.php, line 68
+App\Shell\HedgesShell::main() - APP/Shell\HedgesShell.php, line 25
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+

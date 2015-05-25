@@ -39,6 +39,24 @@
 </div>
 
 
+<div class="row2">    
+    <div class="columns col-lg-10 col-md-9 panel panel-default">
+        <?php
+            if(!isset($_GET['status']) || $_GET['status'] = "") {
+                $panelTitle = "Unrealized Profit / Loss (Open Positions)";
+            } else {
+                $panelTitle = "Realized Profit / Loss (Closed Positions)";
+            }
+        ?>
+        
+        <div class="panel-heading"><?= $panelTitle ?></div>
+        <div class="panel-body">
+            <div class="canvas-wrapper">
+                <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+            </div>
+        </div>
+    </div>        
+</div>
 
 <div class="row2">
     <div class="hedgePositions index col-lg-10 col-md-9 columns">        
@@ -181,24 +199,6 @@
     </div>
 </div>
 
-<div class="row2">    
-    <div class="columns col-lg-10 col-md-9 panel panel-default">
-        <?php
-            if(!isset($_GET['status']) || $_GET['status'] = "") {
-                $panelTitle = "Unrealized Profit / Loss (Open Positions)";
-            } else {
-                $panelTitle = "Realized Profit / Loss (Closed Positions)";
-            }
-        ?>
-        
-        <div class="panel-heading"><?= $panelTitle ?></div>
-        <div class="panel-body">
-            <div class="canvas-wrapper">
-                <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
-            </div>
-        </div>
-    </div>        
-</div>
 
 
 <script>
