@@ -135,8 +135,7 @@ class HedgePositionsController extends AppController
         ]);
         
         $hedgePosition->forceUpdate($id);   // Call Update Function.
-        
-        
+                
         return $this->redirect(['action' => 'index']);
     }
     

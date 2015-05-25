@@ -1,5 +1,9 @@
+<?php 
+
+?>
+
 <div class="actions pull-right columns col-lg-2 col-md-3">
-    <h3><?= __('Filter') ?></h3>
+    <h4><?= __('Filter') ?></h4>
     <ul class="side-nav">
         <?php if(isset($_GET['status']) && $_GET['status'] == "all") { ?>
         <li><?= $this->Html->link(__('VIEW OPEN POSITIONS'), ['action' => 'index'] ); ?></li>
@@ -8,6 +12,24 @@
         <?php } ?>
     </ul>
 
+    <h4><?= __('Hide Table Columns') ?></h4>
+    <ul class="side-nav">
+        <li><a class="toggle-vis" data-column="0">ID</a></li>
+        <li><a class="toggle-vis" data-column="1">Status</a></li>
+        <li><a class="toggle-vis" data-column="2">Exchange</a></li>
+        <li><a class="toggle-vis" data-column="3">Bias</a></li>
+        <li><a class="toggle-vis" data-column="4">Amount</a></li>
+        <li><a class="toggle-vis" data-column="5">SSP</a></li>
+        <li><a class="toggle-vis" data-column="6">Leverage</a></li>
+        <li><a class="toggle-vis" data-column="7">Opened At</a></li>
+        <li><a class="toggle-vis" data-column="8">Current Price</a></li>
+        <li><a class="toggle-vis" data-column="9">Unrealized PL</a></li>
+        <li><a class="toggle-vis" data-column="10">Realized PL</a></li>
+        <li><a class="toggle-vis" data-column="11">Recalculation Countdown</a></li>
+        <li><a class="toggle-vis" data-column="12">Actions</a></li>   
+    </ul>
+    
+    
     <h3><?= __('Actions') ?></h3>    
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Hedge Position'), ['action' => 'add']) ?></li>
@@ -15,6 +37,8 @@
         <li><?= $this->Html->link(__('New Exchange'), ['controller' => 'Exchanges', 'action' => 'add']) ?> </li>
     </ul>
 </div>
+
+
 
 <div class="row2">
     <div class="hedgePositions index col-lg-10 col-md-9 columns">        
@@ -52,7 +76,9 @@
             }
             $currentPrice = $currentPrices[$hedgePosition->exchange_id];
             
-            $endingTime = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($hedgePosition->timeopened)));
+            // $endingTime = date("Y-m-d H:i:s", strtotime("+7 days", strtotime($hedgePosition->timeopened)));
+            $endingTime = $hedgePosition->getTimeRemaining();
+            
             if($hedgePosition->status == 0) {
                 $endingTime = "-- N/A --";
             }
@@ -134,7 +160,7 @@
                     if(!isset($_GET['status']) || $_GET['status'] = "") {
                         $data['upl'][] = 0;
                         $data['rpl'][] = number_format($hedgePosition->getUnrealizedPL(), 8);
-                        $data['title'][] = $hedgePosition->bias . " bought " . $hedgePosition-amount . " BTC @ " . $hedgePosition->openprice . " currently @ " . $hedgePosition->getCurrentPrice();
+                        $data['title'][] = $hedgePosition->bias . " bought " . $hedgePosition->amount . " BTC @ " . $hedgePosition->openprice . " currently @ " . $hedgePosition->getCurrentPrice();
                     }
                 }
             endforeach;
@@ -142,6 +168,15 @@
             
         ?>
         </tbody>
+        <tfoot>
+        	<tr>
+                <th colspan="9" style="text-align:right">Totals:</th>
+                <th></th>   <!-- Unrealized PL -->
+                <th></th>   <!-- Realized PL -->
+                <th></th>   <!-- Reclaculation --> 
+                <th></th>   <!-- Actions -->
+            </tr>
+        </tfoot>
         </table>
     </div>
 </div>
@@ -197,12 +232,12 @@ var hedgePLData = {
 
 window.onload = function() {
 	var chart1 = document.getElementById("line-chart").getContext("2d");
-	window.myLineChart = new Chart(chart1).Bar(hedgePLData, {
-		responsive: true
+	window.myLineChart = new Chart(chart1).Line(hedgePLData, {
+		responsive: true,
 	});
     
     
-    $('#hedge_positions').dataTable( {
+    var table = $('#hedge_positions').dataTable( {
         "order": [[0, "desc"],[1, "desc"]],
         "footerCallback": function ( row, data, start, end, display ) {
             var api = this.api(), data;
@@ -233,9 +268,46 @@ window.onload = function() {
  
             // Update footer
             $( api.column( 9 ).footer() ).html(
-                '$'+pageTotal +' ( $'+ total +' total)'
+                pageTotal.toFixed(5) +' BTC <br />('+ total.toFixed(5) +' BTC total)'
             );
+            ////////////////////////////////////////////////////////
+            // Total over all pages
+            total = api
+                .column( 10)
+                .data()
+                .reduce( function (a, b) {
+                    return intVal(a) + intVal(b);
+                } );
+ 
+            // Total over this page
+            pageTotal = api
+                .column( 10, { page: 'current'} )
+                .data()
+                .reduce( function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0 );
+ 
+            // Update footer
+            $( api.column( 10 ).footer() ).html(
+                '$'+pageTotal.toFixed(5) +' BTC <br />('+ total.toFixed(5) +' BTC total)'
+            );
+           
         }
+    } );
+    
+    // Hide Columns in Table.
+    $('a.toggle-vis').on( 'click', function (e) {
+        var table = $('#hedging_positions').DataTable( {
+            "scrollY": "200px",
+            "paging": false
+        });
+        e.preventDefault();
+         
+        // Get the column API object
+        var column = table.DataTable().column( $(this).attr('data-column') );
+         
+        // Toggle the visibility
+        column.visible( ! column.visible() );
     } );
     
 }
