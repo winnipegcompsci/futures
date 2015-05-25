@@ -134,8 +134,12 @@ class HedgePositionsController extends AppController
             'recursive' => 0,
         ]);
         
-        $hedgePosition->forceUpdate($id);   // Call Update Function.
-                
+        if($hedgePosition->forceUpdate($id)) {
+            $this->Flash->success('The hedge position has been closed and reopened.');
+        } else {
+            $this->Flash->error('The hedge position could not be closed and reopened.');
+        }
+        
         return $this->redirect(['action' => 'index']);
     }
     

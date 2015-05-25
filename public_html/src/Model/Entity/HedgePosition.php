@@ -165,10 +165,9 @@ class HedgePosition extends Entity
             'm' => (int) $minutes,
             's' => (int) $seconds,
         );
-        $str =  $obj['d'] . " days, " . 
-                $obj['h'] . " hours, " . 
-                $obj['m'] . " min, " . 
-                $obj['s'] . " seconds.";
+        $str =  $obj['d'] . " d, " . 
+                $obj['h'] . " h, " . 
+                $obj['m'] . " m.";
         
         return $str;
         
@@ -176,7 +175,12 @@ class HedgePosition extends Entity
     }
     
     public function forceUpdate($id) {
-        $this->update($id, TRUE);
+        if($this->update($id, TRUE)) {
+            return true;
+        } else {
+            return false;
+        }
+        
     }
     
     public function update($id = null, $force = FALSE) 

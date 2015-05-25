@@ -297,14 +297,10 @@ window.onload = function() {
     
     // Hide Columns in Table.
     $('a.toggle-vis').on( 'click', function (e) {
-        var table = $('#hedging_positions').DataTable( {
-            "scrollY": "200px",
-            "paging": false
-        });
         e.preventDefault();
          
         // Get the column API object
-        var column = table.DataTable().column( $(this).attr('data-column') );
+        var column = table.column( $(this).attr('data-column') );
          
         // Toggle the visibility
         column.visible( ! column.visible() );
