@@ -1,6 +1,4 @@
-<?php 
-
-?>
+<meta http-equiv="refresh" content="120" >
 
 <div class="actions pull-right columns col-lg-2 col-md-3">
     <h4><?= __('Filter') ?></h4>
@@ -173,12 +171,12 @@
                 if($hedgePosition->status == 0) {
                     $data['upl'][] = 0;
                     $data['rpl'][] = number_format($hedgePosition->getRealizedPL(), 8);
-                    $data['title'][] = $hedgePosition->bias . " bought " . $hedgePosition->amount .  " BTC @ " . $hedgePosition->openprice . " sold @ " . $hedgePosition->closeprice;
+                    $data['title'][] = $hedgePosition->exchange->name . " - " . $hedgePosition->bias . " = " . $hedgePosition->amount .  " BTC @ " . number_format($hedgePosition->openprice, 2) . " sold @ " . number_format($hedgePosition->closeprice, 2);
                 } else {
                     if(!isset($_GET['status']) || $_GET['status'] = "") {
                         $data['upl'][] = 0;
                         $data['rpl'][] = number_format($hedgePosition->getUnrealizedPL(), 8);
-                        $data['title'][] = $hedgePosition->bias . " bought " . $hedgePosition->amount . " BTC @ " . $hedgePosition->openprice . " currently @ " . $hedgePosition->getCurrentPrice();
+                        $data['title'][] = $hedgePosition->exchange->name . " - " . $hedgePosition->bias . " = " . $hedgePosition->amount . " BTC @ " . number_format($hedgePosition->openprice, 2) . " currently @ " . number_format($hedgePosition->getCurrentPrice(), 2);
                     }
                 }
             endforeach;
@@ -268,7 +266,7 @@ window.onload = function() {
  
             // Update footer
             $( api.column( 9 ).footer() ).html(
-                pageTotal.toFixed(5) +' BTC <br />('+ total.toFixed(5) +' BTC total)'
+                pageTotal.toFixed(4) +' BTC ('+ total.toFixed(5) +' BTC total)'
             );
             ////////////////////////////////////////////////////////
             // Total over all pages
@@ -289,7 +287,7 @@ window.onload = function() {
  
             // Update footer
             $( api.column( 10 ).footer() ).html(
-                '$'+pageTotal.toFixed(5) +' BTC <br />('+ total.toFixed(5) +' BTC total)'
+                '$'+pageTotal.toFixed(4) +' BTC ('+ total.toFixed(5) +' BTC total)'
             );
            
         }, // end footerCallback
