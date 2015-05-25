@@ -20,8 +20,8 @@ class HedgePositionsController extends AppController
         if(isset($_GET['status']) && $_GET['status'] == 'all') {
             $this->paginate = [
                 'contain' => ['Exchanges'],
-                'limit' => 50,
-                'order' => ['id' => 'desc']
+                'limit' => '100',
+                'order' => ['HedgePositions.timeopened' => 'desc']
             ];
             $this->set('hedgePositions', $this->paginate($this->HedgePositions));
             $this->set('_serialize', ['hedgePositions']);
@@ -34,6 +34,7 @@ class HedgePositionsController extends AppController
                 $this->paginate(
                     $this->HedgePositions->find('all', [
                         'conditions' => ['status' => 1],
+                        'recursive' => 0
                     ])
                 )
             );
@@ -77,7 +78,7 @@ class HedgePositionsController extends AppController
                 $this->Flash->error('The hedge position could not be saved. Please, try again.');
             }
         }
-        $exchanges = $this->HedgePositions->Exchanges->find('list', ['limit' => 200]);
+        $exchanges = $this->HedgePositions->Exchanges->find('list', ['limit' => 200, 'recursive' => 0]);
         $this->set(compact('hedgePosition', 'exchanges'));
         $this->set('_serialize', ['hedgePosition']);
     }
@@ -127,10 +128,22 @@ class HedgePositionsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
+    public function forceUpdate($id = null) {
+        $hedgePosition = $this->HedgePositions->get($id, [
+            'contain' => ['Exchanges'],
+            'recursive' => 0,
+        ]);
+        
+        $hedgePosition->forceUpdate($id);   // Call Update Function.
+        
+        
+        return $this->redirect(['action' => 'index']);
+    }
     
     public function update($id = null) {
         $hedgePosition = $this->HedgePositions->get($id, [
-            'contain' => ['Exchanges']
+            'contain' => ['Exchanges'],
+            'recursive' => 0,
         ]);
         
         $hedgePosition->update();   // Call Update Function.

@@ -86,7 +86,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
              
 			<li role="presentation" class="divider"></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'exchanges', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-cog"></span> Exchanges </a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'sandbox']); ?>"><span class="glyphicon glyphicon-scale"></span> Testing Sandbox </a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'sandbox']); ?>"><span class="glyphicon glyphicon-screenshot"></span> Testing Sandbox </a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		
@@ -96,14 +96,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 				<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'dashboard']); ?>"><span class="glyphicon glyphicon-home"></span></a></li>
 				<li class="active"><?= isset($this->request->params['pass'][0]) ? ucwords($this->request->params['pass'][0]) : $this->fetch('title') ?></li>
 			</ol>
-		</div><!--/.row-->
-        <!-- 
-        <div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header"><?= ucwords($this->request->params['pass'][0]); ?></h1>
-			</div>
-		</div><!--/.row-->
-        
+		</div><!--/.row-->        
         
         <div class="row2">
             <?= $this->Flash->render() ?>
