@@ -292,8 +292,9 @@ window.onload = function() {
                 '$'+pageTotal.toFixed(5) +' BTC <br />('+ total.toFixed(5) +' BTC total)'
             );
            
-        }
-    } );
+        }, // end footerCallback
+        
+    }); // end dataTable initialization
     
     // Hide Columns in Table.
     $('a.toggle-vis').on( 'click', function (e) {
