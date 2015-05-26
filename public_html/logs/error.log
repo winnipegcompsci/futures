@@ -5625,3 +5625,665 @@ Stack Trace:
 #2 {main}
 
 
+2015-05-26 16:38:21 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 16:48:46 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 16:48:47 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /backtothefutures.com/public_html/hedge_positions
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 16:48:51 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 16:48:51 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /backtothefutures.com/public_html/hedge_positions
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 16:49:32 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 16:49:35 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 16:49:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /backtothefutures.com/public_html/hedge_positions
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 55)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 16:55:36 Warning: Warning (4096): Object of class stdClass could not be converted to string in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Exchanges\index.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Exchanges\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:01:00 Error: Fatal Error (4): syntax error, unexpected 'protectted' (T_STRING), expecting function (T_FUNCTION) in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:01:00 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'protectted' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /backtothefutures.com/public_html/exchanges
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 17:06:19 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Exchanges\index.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:06:21 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Exchanges\index.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:06:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /backtothefutures.com/public_html/exchanges
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 17:21:47 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 83
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:22:48 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, null given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 83 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 83
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:22:48 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 83
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:22:48 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 83
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:23:49 Error: [BadMethodCallException] Unknown method "fetch"
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp(84): Cake\ORM\Table->__call('fetch', Array)
+#1 C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp(84): App\Model\Table\ExchangesTable->fetch('all')
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(815): include('C:\\wamp\\www\\bac...')
+#3 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(775): Cake\View\View->_evaluate('C:\\wamp\\www\\bac...', Array)
+#4 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(463): Cake\View\View->_render('C:\\wamp\\www\\bac...')
+#5 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Controller\Controller.php(581): Cake\View\View->render('dashboard', NULL)
+#6 C:\wamp\www\backtothefutures.com\public_html\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('dashboard')
+#7 [internal function]: App\Controller\PagesController->display('dashboard')
+#8 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Controller\Controller.php(410): call_user_func_array(Array, Array)
+#9 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#11 C:\wamp\www\backtothefutures.com\public_html\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2015-05-26 17:24:22 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, object given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 85 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 85
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:24:22 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 85
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:24:22 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 85
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:25:33 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:25:35 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:25:35 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 17:25:56 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, string given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 86 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 86
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:25:56 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 86
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:25:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 17]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 17
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 86
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:28:51 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, null given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 98 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 98
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:28:51 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 98
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:28:51 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 98
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:19 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, object given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 99 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:19 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:19 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:42 Warning: Warning (4096): Argument 2 passed to Cake\View\View::element() must be of the type array, object given, called in C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp on line 99 and defined in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 360]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\View::element() - CORE\src\View\View.php, line 360
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:42 Warning: Warning (2): array_merge() [<a href='http://php.net/function.array-merge'>function.array-merge</a>]: Argument #2 is not an array in [C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php, line 1142]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_merge - [internal], line ??
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:29:42 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 17]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 17
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 99
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:35:11 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:37:39 Error: Fatal Error (1): Class 'TableRegistry' not found in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:37:41 Error: Fatal Error (1): Class 'TableRegistry' not found in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:37:41 Error: [Cake\Error\FatalErrorException] Class 'TableRegistry' not found
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'TableReg...', 'C:\\wamp\\www\\bac...', 18)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 17:38:06 Error: Fatal Error (4): syntax error, unexpected ''Cake\ORM\TableRegistry'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR) in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 2]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:38:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''Cake\ORM\TableRegistry'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 2)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 17:45:36 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Element\ticker_table.ctp, line 25]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\ticker_table.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1142
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+include - APP/Template\Pages\dashboard.ctp, line 102
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 581
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 410
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-05-26 17:51:42 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp, line 84]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:51:45 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp, line 84]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 17:51:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 84)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 18:00:38 Error: Fatal Error (4): syntax error, unexpected 'funtion' (T_STRING), expecting variable (T_VARIABLE) in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-05-26 18:00:39 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'funtion' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bac...', 58)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-05-26 18:03:47 Error: [Cake\View\Exception\MissingElementException] Element\depth_table.ctp
+Request URL: /backtothefutures.com/public_html/pages/dashboard
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\src\Template\Pages\dashboard.ctp(89): Cake\View\View->element('depth_table')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(815): include('C:\\wamp\\www\\bac...')
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(775): Cake\View\View->_evaluate('C:\\wamp\\www\\bac...', Array)
+#3 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\View\View.php(463): Cake\View\View->_render('C:\\wamp\\www\\bac...')
+#4 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Controller\Controller.php(581): Cake\View\View->render('dashboard', NULL)
+#5 C:\wamp\www\backtothefutures.com\public_html\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('dashboard')
+#6 [internal function]: App\Controller\PagesController->display('dashboard')
+#7 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Controller\Controller.php(410): call_user_func_array(Array, Array)
+#8 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#10 C:\wamp\www\backtothefutures.com\public_html\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+

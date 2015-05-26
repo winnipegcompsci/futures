@@ -73,19 +73,25 @@ use Cake\Core\Configure;
         <div class="panel panel-info">
 			<div class="panel-body tabs">
                 <ul class="nav nav-pills">
-					<li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">Bitcoin (BTC)</a></li>
-					<li><a href="#tab2" data-toggle="tab" onclick="redraw()">Litecoin (LTC)</a></li>
-                    <li class="pull-right"><span><h3>Futures Market Spot Prices</h3></span></li>
+					<li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">Tickers</a></li>
+					<li><a href="#tab2" data-toggle="tab" onclick="redraw()">Market Depth</a></li>
+                    <li><a href="#tab3" data-toggle="tab" onclick="redraw()">Trade History</a></li>
+                    <li class="pull-right"><span><h3>Exchange Details</h3></span></li>
 				</ul>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
                         <div class="canvas-wrapper">
-                            <canvas class="main-chart" id="btc-chart" height="200" width="600"></canvas>
+                            <?= $this->element('ticker_table'); ?>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab2">
                         <div class="canvas-wrapper">
-                            <canvas class="main-chart" id="ltc-chart" height="200" width="600"></canvas>
+                            <?= $this->element('depth_table'); ?>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3">
+                        <div class="canvas-wrapper">
+                            <canvas class="main-chart" id="btc-chart" height="200" width="600"></canvas>
                         </div>
                     </div>
                 </div>
@@ -94,32 +100,10 @@ use Cake\Core\Configure;
 	</div>
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="row">
-            <div class="panel panel-primary">
-                <div class="panel-heading"> OKCoin (BTC): </div>
+            <div class="panel-default">
+                <div class="panel-heading">Last Positions Opened</div>
                 <div class="panel-body">
-                    <table width="80%">
-                        <tr>
-                            <td>Low</td> <td class="pull-right">$</td>
-                        </tr>
-                        <tr>
-                            <td>High</td> <td class="pull-right">$</td>
-                        </tr>
-                        <tr>
-                            <td>Last</td> <td class="pull-right">$</td>
-                        </tr>
-                        <tr>
-                            <td>Buy</td> <td class="pull-right">$</td>
-                        </tr>
-                        <tr>
-                            <td>Sell</td> <td class="pull-right">$</td>
-                        </tr>
-                        <tr>
-                            <td>Volume</td> <td class="pull-right"></td>
-                        </tr>
-                        <tr>
-                            <td>Time</td> <td class="pull-right"></td>
-                        </tr>                   
-                    </table>
+                    -- Recent Positions Element --
                 </div>
             </div>
         </div>
@@ -167,43 +151,22 @@ use Cake\Core\Configure;
     </div>
 </div>
 
+
+
+<script> 	 
+window.onload = function() {	
+    $(document).ready(function() { 	 	
+        $('#btc_tickertable').dataTable({
+            "pagingType": "none",
+        });  
+    }); 	
+} 	
+</script>
+
 <script>
-window.btcChartData = {
-    labels : [
-        // Labels Here
-    ],
-    datasets : [
-        {
-            label: "OKCoin Futures - Buy Price",
-            fillColor : "rgba(48, 164, 255, 0.2)",
-			strokeColor : "rgba(48, 164, 255, 0.8)",
-			highlightFill : "rgba(48, 164, 255, 0.75)",
-			highlightStroke : "rgba(48, 164, 255, 1)",
-            data : [
-                // Dataset 1 Here
-            ]
-        },
-        {
-            label: "OKCoin Futures - Sell Price",
-            fillColor : "rgba(220,220,220,0.2)",
-            strokeColor : "rgba(220,220,220,1)",
-            pointColor : "rgba(220,220,220,1)",
-            pointStrokeColor : "#fff",
-            pointHighlightFill : "#fff",
-            pointHighlightStroke : "rgba(220,220,220,1)",
-            data : [
-                // Dataset 2 Here
-            ]
-        }
-    ]
-}
+
         
-window.onload = function(){
-	var chart1 = document.getElementById("btc-chart").getContext("2d");
-	window.myBTCLine = new Chart(chart1).Line(window.btcChartData, {
-		responsive: true
-	});
-    
+window.onload = function(){  
     $(function() {
         $('#easypiechart-teal').easyPieChart({
             scaleColor: false,

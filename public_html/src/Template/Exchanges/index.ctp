@@ -7,7 +7,7 @@
     </ul>
 </div>
 <div class="exchanges index col-lg-10 col-md-9 columns">
-    <table id="datatable" cellpadding="0" cellspacing="0">
+    <table width="100%" id="exchanges_table" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
             <th><?= $this->Paginator->sort('id') ?></th>
@@ -30,16 +30,10 @@
                 <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $exchange->id], ['confirm' => __('Are you sure you want to delete # {0}?', $exchange->id)]) ?>
             </td>
         </tr>
-
     <?php endforeach; ?>
     </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
 </div>
+
+
+

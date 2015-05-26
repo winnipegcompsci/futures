@@ -128,6 +128,8 @@ class HedgePositionsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
+    // Testing Git Push.      
+    
     public function forceUpdate($id = null) {
         $hedgePosition = $this->HedgePositions->get($id, [
             'contain' => ['Exchanges'],
@@ -139,7 +141,7 @@ class HedgePositionsController extends AppController
         } else {
             $this->Flash->error('The hedge position could not be closed and reopened.');
         }
-        
+          
         return $this->redirect(['action' => 'index']);
     }
     
