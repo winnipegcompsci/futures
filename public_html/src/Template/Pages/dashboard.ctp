@@ -163,9 +163,7 @@ window.onload = function() {
 } 	
 </script>
 
-<script>
-
-        
+<script>       
 window.onload = function(){  
     $(function() {
         $('#easypiechart-teal').easyPieChart({
