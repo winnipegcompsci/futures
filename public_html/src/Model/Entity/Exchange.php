@@ -90,15 +90,15 @@ class Exchange extends Entity
           
             $http = new Client();
             
-            if($this->name == "OKCOIN") {
+            if(strtoupper($this->name) == "OKCOIN") {
                 $depth = json_decode($http->get('https://www.okcoin.com/api/v1/depth.do?symbol=btc_usd')->body);
                 $this->cachedDepth = $depth;
                 return $depth;
-            } else if ($this->name == "796") {
+            } else if (strtoupper($this->name) == "796") {
                 $depth = json_decode($http->get('http://api.796.com/v3/futures/depth.html?type=weekly')->body);              
                 $this->cachedDepth = $depth;
                 return $depth;
-            } else if ($this->name == "BITVC") {
+            } else if (strtoupper($this->name) == "BITVC") {
                 $depth = json_decode($http->get('http://market.bitvc.com/futures/depths_btc_week.js')->body);
                 $this->cachedDepth = $depth;
                 return $depth;
@@ -109,6 +109,56 @@ class Exchange extends Entity
     }
     
     public function getTradeHistory() {
-        
+        if(!isset($this->cachedTrades) || abs(strtotime("now") - $this->lastUpdated['trades']) > 60) {
+            $this->lastUpdated['trades'] = strtotime("now");
+                
+          
+            $http = new Client();
+            
+            if(strtoupper($this->name) == "OKCOIN") {
+                $trades = json_decode($http->get('https://www.okcoin.com/api/v1/depth.do?symbol=btc_usd')->body);
+                $this->cachedTrades = $trades;
+                return $trades;
+            } else if (strtoupper($this->name) == "796") {
+                $trades = json_decode($http->get('http://api.796.com/v3/futures/depth.html?type=weekly')->body);              
+                $this->cachedTrades = $trades;
+                return $trades;
+            } else if (strtoupper($this->name) == "BITVC") {
+                $trades = json_decode($http->get('http://market.bitvc.com/futures/depths_btc_week.js')->body);
+                $this->cachedTrades = $trades;
+                return $trades;
+            }
+        } else {
+            return $this->cachedTrades;
+        }
     }
+    
+    // Spot Trade API    
+    public function spotprice_userinfo() {}
+    public function spotprice_trade() {}
+    public function spotprice_batch_trade() {}
+    public function spotprice_cancel_order() {}
+    public function spotprice_order_info() {}
+    public function spotprice_withdraw() {}
+    public function spotprice_cancel_withdraw() {}
+    public function spotprice_get_order_fee() {}
+    public function spotprice_borrows_info() {}
+    public function spotprice_borrow_money() {}
+    public function spotprice_cancel_borrow() {}
+    public function spotprice_borrow_order_info() {}
+    public function spotprice_repayment() {}
+    public function spotprice_unrepayments_info() {}
+    public function spotprice_account_records() {}
+    
+    // Futures Trade API 
+    public function futures_userinfo() {} 
+    public function futures_position() {}
+    public function futures_trade() {}
+    public function futures_batch_trade() {}
+    public function futures_cancel() {}
+    public function futures_order_info() {}
+    public function futures_odrers_info() {}
+    public function future_userinfo_fixed() {} 
+    public function future_userinfo_tofix() {}
+    
 }
