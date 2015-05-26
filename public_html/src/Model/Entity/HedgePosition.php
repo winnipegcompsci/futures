@@ -55,13 +55,11 @@ class HedgePosition extends Entity
             $http = new Client();
             
             if($exchange == "OKCOIN") {
-                error_log('SENDING GET REQUEST TO OKCOIN');
                 $ticker = json_decode($http->get('https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd')->body);
                 $this->cachedCurrentPrice[$this->exchange_id] = $ticker->ticker->buy;
                 return $ticker->ticker->buy;
                 
             } else if ($exchange == "796") {
-                error_log('SENDING GET REQUEST TO 796');
                 $ticker = json_decode($http->get('http://api.796.com/v3/futures/ticker.html?type=weekly')->body);
                 $this->cachedCurrentPrice[$this->exchange_id] = $ticker->ticker->buy;
                 return $ticker->ticker->buy;
@@ -265,15 +263,12 @@ class HedgePosition extends Entity
                 $newPosition->recalculation = $hedgePosition->recalculation;   
                    
                 if ($this->HedgePositions->save($newPosition)) {
-                    error_log("Old Position Closed, New Position Created");
                     return true;
                 } else {
-                    error_log("Error: The hedge could not be Saved!");
                     return false;
                 }
             } else {
                 // else hold onto position.
-                error_log("Holding on to Position");
                 return false;
             }
         }

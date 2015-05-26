@@ -6321,3 +6321,18 @@ Stack Trace:
 #8 {main}
 
 
+2015-05-26 21:20:58 Error: [Cake\Controller\Exception\MissingActionException] Action HedgePositionsController::buy() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'HedgePositionsController',
+  'action' => 'buy',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /backtothefutures.com/public_html/hedge_positions/buy
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\HedgePositionsController))
+#2 C:\wamp\www\backtothefutures.com\public_html\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

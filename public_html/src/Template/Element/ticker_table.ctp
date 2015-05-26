@@ -26,7 +26,6 @@ use Cake\ORM\TableRegistry;
                     $ticker = $exchange->getTicker();
                     
                     echo "<tr>";
-
                     echo "<td>" . $exchange->name . "</td>";
                     echo "<td>$" . (isset($ticker->ticker->last) ? $ticker->ticker->last : $ticker->last) . "</td>";
                     echo "<td>$" . (isset($ticker->ticker->buy) ? $ticker->ticker->buy : $ticker->buy) . "</td>";
@@ -34,7 +33,6 @@ use Cake\ORM\TableRegistry;
                     echo "<td>$" . (isset($ticker->ticker->low) ? $ticker->ticker->low : $ticker->low) . "</td>";
                     echo "<td>$" . (isset($ticker->ticker->high) ? $ticker->ticker->high : $ticker->high) . "</td>";
                     echo "<td>" . (isset($ticker->ticker->vol) ? $ticker->ticker->vol : $ticker->vol) . "</td>";
-                     
                     echo "</tr>";
                 }
             ?>

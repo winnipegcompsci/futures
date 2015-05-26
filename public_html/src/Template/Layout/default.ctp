@@ -69,6 +69,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 $numPositions++;
             }
         }
+        
+        $numThisWeek = 3;
+        $numNextWeek = 1;
+        $numThisQuarter = 2;
+        
+        $numContracts = $numThisWeek + $numNextWeek + $numThisQuarter;
     ?>
     
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
@@ -76,25 +82,34 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'dashboard']); ?>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
             
             <li role="presentation" class="divider"></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'HedgePositions', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-stats"></span> Hedge Positions <span style="background-color: #30a5ff" class="pull-right badge"><?= $numPositions ?></span> </a></li>
+            <li>
+                <a href="<?= $this->Url->build(['controller' => 'HedgePositions', 'action' => 'index']); ?>">
+                    <span class="glyphicon glyphicon-stats"></span> Hedge Positions 
+                    <span style="background-color: #30a5ff" class="pull-right badge"><?= $numPositions ?></span> 
+                </a>
+            </li>
             <li class="parent">
 				<a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>">
-					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span> 
+					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>  
                 </a>
 				<ul class="children collapse in" id="sub-item-1">
 					<li>
-						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_week']); ?>">
-							<span class="glyphicon glyphicon-share-alt"></span> This Week's Contracts
-						</a>
+                        <a style="padding: 10px 15px" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_week']); ?>">
+                            <span class="glyphicon glyphicon-share-alt"></span> Contracts This Week
+                            <span style="background-color: #30a5ff;" class="pull-right badge"><?= $numThisWeek ?></span>                             
+                        </a>
+                        
 					</li>
 					<li>
-						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_next_week']); ?>">
-							<span class="glyphicon glyphicon-share-alt"></span> Next Week's Contracts
+						<a style="padding: 10px 15px" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_next_week']); ?>">
+							<span class="glyphicon glyphicon-share-alt"></span> Contracts New Week
+                            <span style="background-color: #30a5ff; " class="pull-right badge"><?= $numNextWeek ?></span> 
 						</a>
 					</li>
                     <li>
-						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_quarter']); ?>">
-							<span class="glyphicon glyphicon-share-alt"></span> This Quarter's Contracts
+						<a style="padding: 10px 15px" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_quarter']); ?>">
+							<span class="glyphicon glyphicon-share-alt"></span> Contracts This Quarter 
+                            <span style="background-color: #30a5ff" class="pull-right badge"><?= $numThisQuarter ?></span> 
 						</a>
 					</li>
                 </ul>
