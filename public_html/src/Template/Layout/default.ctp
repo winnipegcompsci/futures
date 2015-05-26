@@ -90,7 +90,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </li>
             <li class="parent">
 				<a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>">
-					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>  
+					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span>  
                 </a>
 				<ul class="children collapse in" id="sub-item-1">
 					<li>
@@ -158,6 +158,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 <script> 	 	
 $(document).ready(function() { 	 	
+    !function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
     $('#datatable').dataTable({
         "pagingType": "full_numbers",
     });  
