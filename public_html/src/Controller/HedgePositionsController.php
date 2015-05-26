@@ -135,7 +135,7 @@ class HedgePositionsController extends AppController
         ]);
         
         if($hedgePosition->forceUpdate($id)) {
-            $this->Flash->success('The hedge position has been closed and reopened.');
+            $this->Flash->success('The hedge position has been closed and reopened for a realized profit of: ' . $hedgePosition->getRealizedPL() . ' .');
         } else {
             $this->Flash->error('The hedge position could not be closed and reopened.');
         }
