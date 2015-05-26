@@ -157,7 +157,7 @@ use Cake\Core\Configure;
 window.onload = function() {	
     $(document).ready(function() { 	 	
         $('#btc_tickertable').dataTable({
-            "pagingType": "none",
+            "pagingType": "full",
         });  
     }); 	
 } 	

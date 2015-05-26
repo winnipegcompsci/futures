@@ -3,6 +3,7 @@
 <div class="actions pull-right columns col-lg-2 col-md-3">
     <div class="panel panel-default">
         <div class="panel-default">
+            <div class="panel-body">
             <h4><?= __('Filter') ?></h4>
             <ul class="side-nav">
                 <?php if(isset($_GET['status']) && $_GET['status'] == "all") { ?>
@@ -36,6 +37,7 @@
                 <li><?= $this->Html->link(__('List Exchanges'), ['controller' => 'Exchanges', 'action' => 'index']) ?> </li>
                 <li><?= $this->Html->link(__('New Exchange'), ['controller' => 'Exchanges', 'action' => 'add']) ?> </li>
             </ul>
+            </div>
         </div>
     </div> <!-- end panel -->
 </div>
