@@ -78,12 +78,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'HedgePositions', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-stats"></span> Hedge Positions <span style="background-color: #30a5ff" class="pull-right badge"><?= $numPositions ?></span> </a></li>
             
+            <!--
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Futures Contracts & Assets <span style="background-color: #30a5ff" class="pull-right badge">12</span> </a> </li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'profitandloss']); ?>"><span class="glyphicon glyphicon-usd"></span> My Profits & Losses <span style="background-color: #30a5ff" class="pull-right badge">2.8k</span> </a> </li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> My Positions Held <span style="background-color: #30a5ff" class="pull-right badge">7</span> </a> </li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions <span style="background-color: #30a5ff" class="pull-right badge">6</span> </a> </li>
-             
+            -->
+            
 			<li role="presentation" class="divider"></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'exchanges', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-cog"></span> Exchanges </a></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'sandbox']); ?>"><span class="glyphicon glyphicon-screenshot"></span> Testing Sandbox </a></li>

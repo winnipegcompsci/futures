@@ -1,39 +1,43 @@
 <meta http-equiv="refresh" content="120" >
 
 <div class="actions pull-right columns col-lg-2 col-md-3">
-    <h4><?= __('Filter') ?></h4>
-    <ul class="side-nav">
-        <?php if(isset($_GET['status']) && $_GET['status'] == "all") { ?>
-        <li><?= $this->Html->link(__('VIEW OPEN POSITIONS'), ['action' => 'index'] ); ?></li>
-        <?php } else { ?>
-        <li><?= $this->Html->link(__('VIEW ALL POSITIONS'), ['action' => 'index', '?' => ['status' => 'all'] ] ); ?></li>
-        <?php } ?>
-    </ul>
+    <div class="panel panel-default">
+        <div class="panel-default">
+            <h4><?= __('Filter') ?></h4>
+            <ul class="side-nav">
+                <?php if(isset($_GET['status']) && $_GET['status'] == "all") { ?>
+                <li><strong><?= $this->Html->link(__('VIEW OPEN POSITIONS'), ['action' => 'index'] ); ?></strong></li>
+                <?php } else { ?>
+                <li><strong><?= $this->Html->link(__('VIEW ALL POSITIONS'), ['action' => 'index', '?' => ['status' => 'all'] ] ); ?></strong></li>
+                <?php } ?>
+            </ul>
 
-    <h4><?= __('Hide Table Columns') ?></h4>
-    <ul class="side-nav">
-        <li><a class="toggle-vis" data-column="0">ID</a></li>
-        <li><a class="toggle-vis" data-column="1">Status</a></li>
-        <li><a class="toggle-vis" data-column="2">Exchange</a></li>
-        <li><a class="toggle-vis" data-column="3">Bias</a></li>
-        <li><a class="toggle-vis" data-column="4">Amount</a></li>
-        <li><a class="toggle-vis" data-column="5">SSP</a></li>
-        <li><a class="toggle-vis" data-column="6">Leverage</a></li>
-        <li><a class="toggle-vis" data-column="7">Opened At</a></li>
-        <li><a class="toggle-vis" data-column="8">Current Price</a></li>
-        <li><a class="toggle-vis" data-column="9">Unrealized PL</a></li>
-        <li><a class="toggle-vis" data-column="10">Realized PL</a></li>
-        <li><a class="toggle-vis" data-column="11">Recalculation Countdown</a></li>
-        <li><a class="toggle-vis" data-column="12">Actions</a></li>   
-    </ul>
-    
-    
-    <h3><?= __('Actions') ?></h3>    
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Hedge Position'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Exchanges'), ['controller' => 'Exchanges', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Exchange'), ['controller' => 'Exchanges', 'action' => 'add']) ?> </li>
-    </ul>
+            <h4><?= __('Hide Table Columns') ?></h4>
+            <ul class="side-nav">
+                <li><a class="toggle-vis" data-column="0">ID</a></li>
+                <li><a class="toggle-vis" data-column="1">Status</a></li>
+                <li><a class="toggle-vis" data-column="2">Exchange</a></li>
+                <li><a class="toggle-vis" data-column="3">Bias</a></li>
+                <li><a class="toggle-vis" data-column="4">Amount</a></li>
+                <li><a class="toggle-vis" data-column="5">SSP</a></li>
+                <li><a class="toggle-vis" data-column="6">Leverage</a></li>
+                <li><a class="toggle-vis" data-column="7">Opened At</a></li>
+                <li><a class="toggle-vis" data-column="8">Current Price</a></li>
+                <li><a class="toggle-vis" data-column="9">Unrealized PL</a></li>
+                <li><a class="toggle-vis" data-column="10">Realized PL</a></li>
+                <li><a class="toggle-vis" data-column="11">Recalculation Countdown</a></li>
+                <li><a class="toggle-vis" data-column="12">Actions</a></li>   
+            </ul>
+            
+            
+            <h3><?= __('Actions') ?></h3>    
+            <ul class="side-nav">
+                <li><?= $this->Html->link(__('New Hedge Position'), ['action' => 'add']) ?></li>
+                <li><?= $this->Html->link(__('List Exchanges'), ['controller' => 'Exchanges', 'action' => 'index']) ?> </li>
+                <li><?= $this->Html->link(__('New Exchange'), ['controller' => 'Exchanges', 'action' => 'add']) ?> </li>
+            </ul>
+        </div>
+    </div> <!-- end panel -->
 </div>
 
 
@@ -236,7 +240,7 @@ window.onload = function() {
     
     
     var table = $('#hedge_positions').dataTable( {
-        "order": [[0, "desc"],[1, "desc"]],
+        "order": [[1, "desc"]],
         "footerCallback": function ( row, data, start, end, display ) {
             var api = this.api(), data;
  
@@ -287,7 +291,7 @@ window.onload = function() {
  
             // Update footer
             $( api.column( 10 ).footer() ).html(
-                '$'+pageTotal.toFixed(4) +' BTC ('+ total.toFixed(5) +' BTC total)'
+                pageTotal.toFixed(4) +' BTC ('+ total.toFixed(5) +' BTC total)'
             );
            
         }, // end footerCallback
