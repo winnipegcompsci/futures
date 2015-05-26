@@ -101,7 +101,7 @@ use Cake\Core\Configure;
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="row">
             <div class="panel-default">
-                <div class="panel-heading">Last Positions Opened</div>
+                <div class="panel-heading">Last Positions Closed </div>
                 <div class="panel-body">
                     -- Recent Positions Element --
                 </div>

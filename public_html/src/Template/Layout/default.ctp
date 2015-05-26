@@ -77,7 +77,29 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'HedgePositions', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-stats"></span> Hedge Positions <span style="background-color: #30a5ff" class="pull-right badge"><?= $numPositions ?></span> </a></li>
-            
+            <li class="parent">
+				<a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>">
+					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span> 
+				</a>
+				<ul class="children collapse in" id="sub-item-1">
+					<li>
+						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_week']); ?>">
+							<span class="glyphicon glyphicon-share-alt"></span> This Week's Contracts
+						</a>
+					</li>
+					<li>
+						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_next_week']); ?>">
+							<span class="glyphicon glyphicon-share-alt"></span> Next Week's Contracts
+						</a>
+					</li>
+                    <li>
+						<a class="" href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts_this_quarter']); ?>">
+							<span class="glyphicon glyphicon-share-alt"></span> This Quarter's Contracts
+						</a>
+					</li>
+                </ul>
+            </li>
+
             <!--
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Futures Contracts & Assets <span style="background-color: #30a5ff" class="pull-right badge">12</span> </a> </li>
