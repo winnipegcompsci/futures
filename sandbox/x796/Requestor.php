@@ -6,6 +6,7 @@ class X796_Requestor
     public function doCurlRequest($curl)
     {
         $response = curl_exec($curl);
+        
         // Check for errors
         if($response === false) {
             $error = curl_errno($curl);

@@ -45,8 +45,8 @@ class BitVC_Rpc {
 						$sign .= $key . "=" . $params[$key] . "&";
 						next($params);
 					}
-					$sign = $sign . "secret_key=" . $auth -> apiKeySecret;
-                    $sign = strtoupper(md5($sign));
+					$sign = $sign . "secretKey=" . $auth -> apiKeySecret;
+                    $sign = md5($sign);
 					$params['sign'] = $sign;
 					break;
 				default :

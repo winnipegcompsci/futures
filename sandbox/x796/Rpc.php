@@ -40,14 +40,15 @@ class X796_Rpc {
 				case 'X796_ApiKeyAuthentication' :
 					//X796 POST请求加密流程
 					ksort($params);
-					$sign = "";
+					$sig = "";
 					while ($key = key($params)) {
-						$sign .= $key . "=" . $params[$key] . "&";
+						$sig .= $key . "=" . $params[$key] . "&";
 						next($params);
 					}
-					$sign = $sign . "secret_key=" . $auth -> apiKeySecret;
-                    $sign = strtoupper(md5($sign));
-					$params['sign'] = $sign;
+					$param_uri = http_build_query($params,'','&');
+                    $sig = base64_encode(hash_hmac('sha1', $param_uri, $auth -> apiKeySecret));
+                    $sig = strtoupper(md5($sig));
+					$params['sig'] = $sig;
 					break;
 				default :
 					throw new X796_Exception("Invalid authentication mechanism");

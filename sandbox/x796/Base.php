@@ -20,7 +20,7 @@ class X796Base {
 	private $_authentication;
 
 	// This constructor is deprecated.
-	public function __construct($authentication, $tokens = null, $apiKeySecret = null) {
+	public function __construct($authentication, $tokens = null, $apiKeySecret = null, $appId = null) {
 		// First off, check for a legit authentication class type
 		if (is_a($authentication, 'X796_Authentication')) {
 			$this -> _authentication = $authentication;
@@ -38,7 +38,7 @@ class X796Base {
 					// Simple API key
 					$this -> _authentication = new X796_SimpleApiKeyAuthentication($apiKey);
 				} else {
-					$this -> _authentication = new X796_ApiKeyAuthentication($apiKey, $apiKeySecret);
+					$this -> _authentication = new X796_ApiKeyAuthentication($apiKey, $apiKeySecret, $appId);
 				}
 			} else {
 				throw new X796_Exception('Could not determine API authentication scheme');

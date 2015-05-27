@@ -43,23 +43,23 @@ class BitVC extends BitVCBase {
     
     // BitVC Future Market API
     public function getFutureTicker($params = null) {
-        return $this->post("http://market.bitvc.com/futures/ticker_btc_week.js", $params);
+        return $this->get("http://market.bitvc.com/futures/ticker_btc_week.js", $params);
     }
     
     public function getFutureDepth($params = null) {
-        return $this->post("http://market.bitvc.com/futures/depths_btc_week.js", $params);
+        return $this->get("http://market.bitvc.com/futures/depths_btc_week.js", $params);
     }
     
     public function getFutureTrades($params = null) {
-        return $this->post("http://market.bitvc.com/futures/trades_btc_week.js", $params);
+        return $this->get("http://market.bitvc.com/futures/trades_btc_week.js", $params);
     }
     
     public function getFutureIndexPrice($params = null) {
-        return $this->post("https://www.bitvc.com/futures_market/index_price_btc", $params);
+        return $this->get("https://www.bitvc.com/futures_market/index_price_btc", $params);
     }
     
     public function getUSDExchangeRate($params = null) {
-        return $this->post("http://market.bitvc.com/futures/exchange_rate.js", $params);
+        return $this->get("http://market.bitvc.com/futures/exchange_rate.js", $params);
     }    
     
     // BitVC Future Trade API
