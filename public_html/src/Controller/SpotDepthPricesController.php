@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * SpotDepthPrices Controller
@@ -10,6 +11,43 @@ use App\Controller\AppController;
  */
 class SpotDepthPricesController extends AppController
 {
+    public function graph($id = null) {
+        $difference = "-1 week";
+        if(isset($_GET['time']) && $_GET['time'] == "day") {
+            $difference = "-1 day";
+        }
+        if(isset($_GET['time']) && $_GET['time'] == "month") {
+            $difference = "-1 month";
+        }
+        if(isset($_GET['time']) && $_GET['time'] == "year") {
+            $difference = "-1 year";
+        }
+        
+        $exchanges = TableRegistry::get('Exchanges')->find('all');
+        
+        foreach($exchanges as $exchange) {
+            $lastResult = $this->SpotDepthPrices->find('all', [
+                'conditions' => [
+                    'exchange_id' => $exchange->id
+                ],
+                'order' => ['id' => 'desc'],
+            ])->first();    
+            
+            $labels = array();
+                        
+            foreach(unserialize($lastResult->bids) as $b) {
+                // echo "<pre>" . print_r($b[1], TRUE) . "</pre>";
+                $labels[] = $b[1];
+            }            
+                        
+            $exchange_depth['xchg_' . $exchange->name]['bids'] = unserialize($lastResult->bids);
+            $exchange_depth['xchg_' . $exchange->name]['asks'] = unserialize($lastResult->asks);
+            $exchange_depth['xchg_' . $exchange->name]['labels'] = $labels;
+        }
+        
+        $this->set('graph_data', $exchange_depth);
+        
+    }
 
     /**
      * Index method

@@ -4,7 +4,7 @@ foreach($graph_data as $name => $exchange_data) {
     <div class="row">
         <div class="columns col-lg-10 col-md-9 col-sm-6">
             <div class="panel-default">
-                <div class="panel-heading"><?= str_replace('xchg_', '', $name) ?> Spot Ticker</div>
+                <div class="panel-heading"><?= str_replace('xchg_', '', $name) ?> Futures Ticker</div>
                 <div class="panel-body">
                     <canvas id="<?= $name ?>_graph" width="700" height="400"></canvas>
 

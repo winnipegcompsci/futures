@@ -23,8 +23,7 @@ class SpotTickerPricesController extends AppController
         if(isset($_GET['time']) && $_GET['time'] == "year") {
             $difference = "-1 year";
         }
-
-
+        
         $spotprices = $this->SpotTickerPrices->find('all', [
             'conditions' =>['timestamp' >= strtotime($difference, strtotime("now"))],
             'contain' => ['Exchanges'],

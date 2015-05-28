@@ -90,7 +90,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </li>
             <li class="parent">
 				<a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>">
-					<span class="glyphicon glyphicon-list"></span> Contracts <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span>  
+					<span class="glyphicon glyphicon-list"></span> Active Futures Positions <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span>  
                 </a>
 				<ul class="children collapse in" id="sub-item-1">
 					<li>

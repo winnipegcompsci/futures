@@ -10,6 +10,30 @@ use App\Controller\AppController;
  */
 class FutureTickerPricesController extends AppController
 {
+    public function graph($id = null) {        
+        $difference = "-1 week";
+        if(isset($_GET['time']) && $_GET['time'] == "day") {
+            $difference = "-1 day";
+        } else if(isset($_GET['time']) && $_GET['time'] == "month") {
+            $difference = "-1 month";
+        } else if(isset($_GET['time']) && $_GET['time'] == "year") {
+            $difference = "-1 year";
+        }
+
+        $futureprices = $this->FutureTickerPrices->find('all', [
+            'conditions' =>['timestamp' >= strtotime($difference, strtotime("now"))],
+            'contain' => ['Exchanges'],
+        ]);
+        
+        foreach($futureprices as $futureprice) {
+            $exchange_tickers['xchg_' . $futureprice->exchange->name]['buy'][] = $futureprice->buy;
+            $exchange_tickers['xchg_' . $futureprice->exchange->name]['sell'][] = $futureprice->sell;
+            $exchange_tickers['xchg_' . $futureprice->exchange->name]['volume'][] = $futureprice->vol;
+            $exchange_tickers['xchg_' . $futureprice->exchange->name]['timestamp'][] = strtotime($futureprice->timestamp);
+        }
+        
+        $this->set('graph_data', $exchange_tickers);      
+    }
 
     /**
      * Index method
