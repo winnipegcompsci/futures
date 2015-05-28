@@ -45,7 +45,7 @@ class SpotTickerPricesFixture extends TestFixture
         [
             'id' => 1,
             'exchange_id' => 1,
-            'timestamp' => 1432830142,
+            'timestamp' => 1432837606,
             'buy' => 1,
             'high' => 1,
             'last' => 1,

@@ -19,7 +19,7 @@ class FutureTickerPricesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Exchanges', 'Contracts']
+            'contain' => ['Exchanges']
         ];
         $this->set('futureTickerPrices', $this->paginate($this->FutureTickerPrices));
         $this->set('_serialize', ['futureTickerPrices']);
@@ -35,7 +35,7 @@ class FutureTickerPricesController extends AppController
     public function view($id = null)
     {
         $futureTickerPrice = $this->FutureTickerPrices->get($id, [
-            'contain' => ['Exchanges', 'Contracts']
+            'contain' => ['Exchanges']
         ]);
         $this->set('futureTickerPrice', $futureTickerPrice);
         $this->set('_serialize', ['futureTickerPrice']);
@@ -59,8 +59,7 @@ class FutureTickerPricesController extends AppController
             }
         }
         $exchanges = $this->FutureTickerPrices->Exchanges->find('list', ['limit' => 200]);
-        $contracts = $this->FutureTickerPrices->Contracts->find('list', ['limit' => 200]);
-        $this->set(compact('futureTickerPrice', 'exchanges', 'contracts'));
+        $this->set(compact('futureTickerPrice', 'exchanges'));
         $this->set('_serialize', ['futureTickerPrice']);
     }
 
@@ -86,8 +85,7 @@ class FutureTickerPricesController extends AppController
             }
         }
         $exchanges = $this->FutureTickerPrices->Exchanges->find('list', ['limit' => 200]);
-        $contracts = $this->FutureTickerPrices->Contracts->find('list', ['limit' => 200]);
-        $this->set(compact('futureTickerPrice', 'exchanges', 'contracts'));
+        $this->set(compact('futureTickerPrice', 'exchanges'));
         $this->set('_serialize', ['futureTickerPrice']);
     }
 

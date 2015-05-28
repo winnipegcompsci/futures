@@ -10,6 +10,36 @@ use App\Controller\AppController;
  */
 class SpotTickerPricesController extends AppController
 {
+      
+    
+    public function graph($id = null) {        
+        $difference = "-1 week";
+        if(isset($_GET['time']) && $_GET['time'] == "day") {
+            $difference = "-1 day";
+        }
+        if(isset($_GET['time']) && $_GET['time'] == "month") {
+            $difference = "-1 month";
+        }
+        if(isset($_GET['time']) && $_GET['time'] == "year") {
+            $difference = "-1 year";
+        }
+
+
+        $spotprices = $this->SpotTickerPrices->find('all', [
+            'conditions' =>['timestamp' >= strtotime($difference, strtotime("now"))],
+            'contain' => ['Exchanges'],
+        ]);
+        
+        foreach($spotprices as $spotprice) {
+            $exchange_tickers['xchg_' . $spotprice->exchange->name]['buy'][] = $spotprice->buy;
+            $exchange_tickers['xchg_' . $spotprice->exchange->name]['sell'][] = $spotprice->sell;
+            $exchange_tickers['xchg_' . $spotprice->exchange->name]['volume'][] = $spotprice->vol;
+            $exchange_tickers['xchg_' . $spotprice->exchange->name]['timestamp'][] = strtotime($spotprice->timestamp);
+        }
+        
+        $this->set('graph_data', $exchange_tickers);      
+    }
+
 
     /**
      * Index method
@@ -88,7 +118,7 @@ class SpotTickerPricesController extends AppController
         $this->set(compact('spotTickerPrice', 'exchanges'));
         $this->set('_serialize', ['spotTickerPrice']);
     }
-
+    
     /**
      * Delete method
      *

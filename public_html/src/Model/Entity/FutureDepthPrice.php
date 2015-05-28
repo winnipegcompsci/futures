@@ -4,9 +4,9 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * FutureTickerPrice Entity.
+ * FutureDepthPrice Entity.
  */
-class FutureTickerPrice extends Entity
+class FutureDepthPrice extends Entity
 {
 
     /**
@@ -17,15 +17,9 @@ class FutureTickerPrice extends Entity
     protected $_accessible = [
         'exchange_id' => true,
         'timestamp' => true,
-        'last' => true,
-        'buy' => true,
-        'sell' => true,
-        'high' => true,
-        'low' => true,
-        'volume' => true,
-        'contract' => true,
+        'asks' => true,
+        'bids' => true,
         'contract_type' => true,
-        'unit_amount' => true,
         'exchange' => true,
     ];
 }

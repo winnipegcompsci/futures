@@ -49,7 +49,7 @@ class FutureTickerPricesFixture extends TestFixture
         [
             'id' => 1,
             'exchange_id' => 1,
-            'timestamp' => 1432832464,
+            'timestamp' => 1432837616,
             'last' => 1,
             'buy' => 1,
             'sell' => 1,

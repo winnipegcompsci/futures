@@ -1,4 +1,4 @@
-<div class="actions columns large-2 medium-3">
+<div class="pull-right actions columns col-lg-2 col-md-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Spot Ticker Price'), ['action' => 'add']) ?></li>
@@ -6,7 +6,11 @@
         <li><?= $this->Html->link(__('New Exchange'), ['controller' => 'Exchanges', 'action' => 'add']) ?> </li>
     </ul>
 </div>
-<div class="spotTickerPrices index large-10 medium-9 columns">
+<div class="spotTickerPrices index col-lg-10 col-md-9 columns">
+Chart Here
+</div>
+
+<div class="spotTickerPrices index col-lg-10 col-md-9 columns">
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>

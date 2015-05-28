@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\FutureTickerPricesController;
+use App\Controller\SpotTradePricesController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
- * App\Controller\FutureTickerPricesController Test Case
+ * App\Controller\SpotTradePricesController Test Case
  */
-class FutureTickerPricesControllerTest extends IntegrationTestCase
+class SpotTradePricesControllerTest extends IntegrationTestCase
 {
 
     /**
@@ -16,7 +16,7 @@ class FutureTickerPricesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.future_ticker_prices',
+        'app.spot_trade_prices',
         'app.exchanges',
         'app.hedge_positions'
     ];

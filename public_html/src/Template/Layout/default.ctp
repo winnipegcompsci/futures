@@ -115,13 +115,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 </ul>
             </li>
 
-            <!--
             <li role="presentation" class="divider"></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Futures Contracts & Assets <span style="background-color: #30a5ff" class="pull-right badge">12</span> </a> </li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'profitandloss']); ?>"><span class="glyphicon glyphicon-usd"></span> My Profits & Losses <span style="background-color: #30a5ff" class="pull-right badge">2.8k</span> </a> </li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> My Positions Held <span style="background-color: #30a5ff" class="pull-right badge">7</span> </a> </li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions <span style="background-color: #30a5ff" class="pull-right badge">6</span> </a> </li>
-            -->
+            <li><a href="<?= $this->Url->build(['controller' => 'spot_ticker_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-file"></span> Spot Tickers </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'spot_depth_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-usd"></span> Spot Market Depth  </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'spot_trade_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> Spot Trades </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'spot_candlestick_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-transfer"></span> Spot Candlestick Data </a> </li>
+
+            <li role="presentation" class="divider"></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'future_ticker_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-file"></span> Futures Tickers </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'future_depth_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-usd"></span> Futures Market Depth </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'future_trade_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> Futures Trades </a> </li>
+            <li><a href="<?= $this->Url->build(['controller' => 'future_candlestick_prices', 'action' => 'graph']); ?>"><span class="glyphicon glyphicon-transfer"></span> Futures Candlestick Data </a> </li>
+
             
 			<li role="presentation" class="divider"></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'exchanges', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-cog"></span> Exchanges </a></li>

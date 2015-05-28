@@ -1,14 +1,14 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\FutureTickerPricesTable;
+use App\Model\Table\FutureTradePricesTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\FutureTickerPricesTable Test Case
+ * App\Model\Table\FutureTradePricesTable Test Case
  */
-class FutureTickerPricesTableTest extends TestCase
+class FutureTradePricesTableTest extends TestCase
 {
 
     /**
@@ -17,7 +17,7 @@ class FutureTickerPricesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.future_ticker_prices',
+        'app.future_trade_prices',
         'app.exchanges',
         'app.hedge_positions'
     ];
@@ -30,8 +30,8 @@ class FutureTickerPricesTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('FutureTickerPrices') ? [] : ['className' => 'App\Model\Table\FutureTickerPricesTable'];
-        $this->FutureTickerPrices = TableRegistry::get('FutureTickerPrices', $config);
+        $config = TableRegistry::exists('FutureTradePrices') ? [] : ['className' => 'App\Model\Table\FutureTradePricesTable'];
+        $this->FutureTradePrices = TableRegistry::get('FutureTradePrices', $config);
     }
 
     /**
@@ -41,7 +41,7 @@ class FutureTickerPricesTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->FutureTickerPrices);
+        unset($this->FutureTradePrices);
 
         parent::tearDown();
     }
