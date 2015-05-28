@@ -6336,3 +6336,18 @@ Stack Trace:
 #3 {main}
 
 
+2015-05-28 16:24:28 Error: [Cake\Controller\Exception\MissingActionException] Action ExchangesController::savespottickerdata() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ExchangesController',
+  'action' => 'savespottickerdata',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /backtothefutures.com/public_html/exchanges/savespottickerdata
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ExchangesController))
+#2 C:\wamp\www\backtothefutures.com\public_html\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

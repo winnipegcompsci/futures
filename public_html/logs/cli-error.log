@@ -121,3 +121,115 @@ Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line
 
 
 
+2015-05-28 15:40:43 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Updatetick" could not be found.
+Exception Attributes: array (
+  'class' => 'Updatetick',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('updatetick')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2015-05-28 15:42:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 19
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:55:30 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 La table 'futures.contracts' n'existe pas
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'contracts', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('contracts', Array)
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(426): Cake\Database\Schema\CachedCollection->describe('contracts')
+#3 [internal function]: Cake\ORM\Table->schema()
+#4 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Association.php(837): call_user_func_array(Array, Array)
+#5 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php(82): Cake\ORM\Association->__call('schema', Array)
+#6 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php(82): Cake\ORM\Association\BelongsTo->schema()
+#7 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(378): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\FutureTickerPrice), Array)
+#8 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(378): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\FutureTickerPrice), Array)
+#9 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(258): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\FutureTickerPrice), Array)
+#10 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(231): Cake\ORM\RulesChecker->checkCreate(Object(App\Model\Entity\FutureTickerPrice), Array)
+#11 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(2094): Cake\ORM\RulesChecker->check(Object(App\Model\Entity\FutureTickerPrice), 'create', Array)
+#12 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1356): Cake\ORM\Table->checkRules(Object(App\Model\Entity\FutureTickerPrice), 'create', Object(ArrayObject))
+#13 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1313): Cake\ORM\Table->_processSave(Object(App\Model\Entity\FutureTickerPrice), Object(ArrayObject))
+#14 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#15 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1314): Cake\Database\Connection->transactional(Object(Closure))
+#16 C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php(124): Cake\ORM\Table->save(Object(App\Model\Entity\FutureTickerPrice))
+#17 C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateActivityShell.php(27): App\Model\Entity\Exchange->saveFutureTickerData()
+#18 [internal function]: App\Shell\UpdateActivityShell->main()
+#19 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\Shell.php(391): call_user_func_array(Array, Array)
+#20 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(204): Cake\Console\Shell->runCommand(Array, true)
+#21 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#22 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#23 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2015-05-28 16:59:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 La table 'futures.contracts' n'existe pas
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'contracts', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('contracts', Array)
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(426): Cake\Database\Schema\CachedCollection->describe('contracts')
+#3 [internal function]: Cake\ORM\Table->schema()
+#4 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Association.php(837): call_user_func_array(Array, Array)
+#5 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php(82): Cake\ORM\Association->__call('schema', Array)
+#6 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php(82): Cake\ORM\Association\BelongsTo->schema()
+#7 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(378): Cake\ORM\Rule\ExistsIn->__invoke(Object(App\Model\Entity\FutureTickerPrice), Array)
+#8 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(378): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\FutureTickerPrice), Array)
+#9 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(258): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\FutureTickerPrice), Array)
+#10 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(231): Cake\ORM\RulesChecker->checkCreate(Object(App\Model\Entity\FutureTickerPrice), Array)
+#11 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(2094): Cake\ORM\RulesChecker->check(Object(App\Model\Entity\FutureTickerPrice), 'create', Array)
+#12 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1356): Cake\ORM\Table->checkRules(Object(App\Model\Entity\FutureTickerPrice), 'create', Object(ArrayObject))
+#13 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1313): Cake\ORM\Table->_processSave(Object(App\Model\Entity\FutureTickerPrice), Object(ArrayObject))
+#14 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#15 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\ORM\Table.php(1314): Cake\Database\Connection->transactional(Object(Closure))
+#16 C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php(124): Cake\ORM\Table->save(Object(App\Model\Entity\FutureTickerPrice))
+#17 C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateActivityShell.php(27): App\Model\Entity\Exchange->saveFutureTickerData()
+#18 [internal function]: App\Shell\UpdateActivityShell->main()
+#19 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\Shell.php(391): call_user_func_array(Array, Array)
+#20 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(204): Cake\Console\Shell->runCommand(Array, true)
+#21 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#22 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#23 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2015-05-28 17:02:08 Error: [Cake\Core\Exception\Exception] fopen(http://market.bitvc.com/futures/ticker_btc_week.js): failed to open stream: HTTP request failed! 
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Network\Http\Adapter\Stream.php(257): Cake\Network\Http\Adapter\Stream->_open('http://market.b...')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Network\Http\Adapter\Stream.php(81): Cake\Network\Http\Adapter\Stream->_send(Object(Cake\Network\Http\Request))
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Network\Http\Client.php(360): Cake\Network\Http\Adapter\Stream->send(Object(Cake\Network\Http\Request), Array)
+#3 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Network\Http\Client.php(334): Cake\Network\Http\Client->send(Object(Cake\Network\Http\Request), Array)
+#4 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Network\Http\Client.php(209): Cake\Network\Http\Client->_doRequest('GET', 'http://market.b...', Array, Array)
+#5 C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php(110): Cake\Network\Http\Client->get('http://market.b...')
+#6 C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateActivityShell.php(27): App\Model\Entity\Exchange->saveFutureTickerData()
+#7 [internal function]: App\Shell\UpdateActivityShell->main()
+#8 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\Shell.php(391): call_user_func_array(Array, Array)
+#9 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(204): Cake\Console\Shell->runCommand(Array, true)
+#10 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#11 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#12 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#13 {main}
+
+
+2015-05-28 18:06:19 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Add" could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+)
+Stack Trace:
+#0 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('add')
+#1 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\wamp\www\backtothefutures.com\public_html\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\wamp\www\backtothefutures.com\public_html\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

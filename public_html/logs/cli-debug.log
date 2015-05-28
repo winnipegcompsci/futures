@@ -193,3 +193,737 @@ Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line
 
 
 
+2015-05-28 15:42:38 Notice: Notice (8): Undefined variable: exchanges in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 19
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Undefined variable: exchange in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 21
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 21
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Undefined variable: exchange in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 22
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 22
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Undefined variable: exchange in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 23]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 23
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 15:42:38 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Shell\UpdateTickersShell.php, line 23]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Shell\UpdateTickersShell::main() - APP/Shell\UpdateTickersShell.php, line 23
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 42
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 43
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 43
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 44
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 44
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 45
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 45
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 46
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 46
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 47
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 47
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 48
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:27 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 48
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 55
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 55
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 56
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 56
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 57
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 57
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 58
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 58
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 59
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 59
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 60
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:37:28 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 60
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 43
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 43
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 44
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 44
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 45
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 45
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 46
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 46
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 47
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 47
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 48
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:15 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 48
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 55
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 55
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 56
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 56
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 57
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 57
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 58
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 58
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 59
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 59
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 60
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 16:38:16 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveSpotTickerData() - APP/Model\Entity\Exchange.php, line 60
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 24
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2015-05-28 18:01:03 Notice: Notice (8): Undefined variable: spotDepthTable in [C:\wamp\www\backtothefutures.com\public_html\src\Model\Entity\Exchange.php, line 255]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Exchange::saveFutureTradesData() - APP/Model\Entity\Exchange.php, line 255
+App\Shell\UpdateActivityShell::main() - APP/Shell\UpdateActivityShell.php, line 39
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 391
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 204
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 175
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 126
+[main] - ROOT\bin\cake.php, line 33
+
+
+

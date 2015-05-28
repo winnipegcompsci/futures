@@ -38,7 +38,7 @@ class X796_Rpc {
 			switch ($authenticationClass) {
 
 				case 'X796_ApiKeyAuthentication' :
-					//X796 POST请求加密流程
+					//X796 POST
 					ksort($params);
 					$sig = "";
 					while ($key = key($params)) {
@@ -47,7 +47,6 @@ class X796_Rpc {
 					}
 					$param_uri = http_build_query($params,'','&');
                     $sig = base64_encode(hash_hmac('sha1', $param_uri, $auth -> apiKeySecret));
-                    $sig = strtoupper(md5($sig));
 					$params['sig'] = $sig;
 					break;
 				default :
